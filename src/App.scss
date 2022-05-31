@@ -1,3 +1,7 @@
-.landing{
-    background-color: blue;
+@import './styles/0_mediaquery';
+@import './styles/Landing.scss';
+@import './styles/TopNav.scss';
+
+body{
+    margin: 0;
 }
