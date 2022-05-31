@@ -1,6 +1,6 @@
 .TopNav{
     position: fixed;
-    background-color: yellow;
+    background-color: yellowgreen;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -8,5 +8,8 @@
 
     .left{
         padding: 1em;
+    }
+    .right{
+        margin: 0 2em 0 0;
     }
 }

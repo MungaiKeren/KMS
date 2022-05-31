@@ -1,12 +1,12 @@
 import React from "react";
-import logo from '../'
+import logo from '../assets/Images/logo.jpg';
 
 export function TopNav(){
 
     return (
         <div className="TopNav">
             <div className="left">
-                <img src="" alt="logo icon" />
+                <img src="{logo}" alt="logo icon" />
                 <p>Kenya Machinery Services</p>
             </div>
             <div className="right">
