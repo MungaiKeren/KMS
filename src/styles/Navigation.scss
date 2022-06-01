@@ -10,7 +10,7 @@
     }
     .left{
         padding-right: 2em;
-        margin: 1em 0 0 1em;
+        margin: 5px 0 1em 1em;
         ul{
             li{
                 text-decoration: none;
@@ -19,4 +19,8 @@
             }
         }
     }
+}
+
+.container{
+    padding: 5em;
 }

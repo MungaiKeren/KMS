@@ -6,7 +6,6 @@ import Navigation from "./Navigation";
 export function LandingPage(props){
     return (
         <div>
-            <TopNav />
             <Navigation />
         </div>
     )

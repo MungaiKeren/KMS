@@ -1,12 +1,15 @@
 import React from "react";
+import BottomNav from "./BottomNav";
+import TopNav from "./TopNav";
 
 export function Navigation(props){
 
     return (
+        <>
+        <TopNav />
         <div className="navigation">
             <div className="right">
                 <h4>Kenya Machinery Services</h4>
-                <p>Tools and equipment supplies</p>
             </div>
             <div className="left">
                 <ul>
@@ -18,6 +21,8 @@ export function Navigation(props){
 
             </div>
         </div>
+        <BottomNav />
+        </>
     )
 
 }
