@@ -1,18 +1,20 @@
 import React from "react";
-import logo from '../assets/Images/logo.jpg';
+import logo from '../assets/Images/logo.png';
 
 export function TopNav(){
 
     return (
         <div className="TopNav">
             <div className="left">
-                <img src="{logo}" alt="logo icon" />
-                <p>Kenya Machinery Services</p>
+                <img src={logo} alt="logo icon" />
             </div>
             <div className="right">
                 <div className="contact-info">
-                    <h4>0706 367 488</h4>
-                    <img src="" alt="whatsappicon" />
+                    <h4>
+                        <i className="fas fa-phone"></i> &nbsp;
+                        0706 367 488
+                    </h4>
+                    <i className="fab fa-whatsapp-square"></i>
                 </div>
             </div>
         </div>

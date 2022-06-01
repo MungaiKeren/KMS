@@ -1,23 +1,12 @@
 .navigation{
-    background-color: blue;
+    background-image: linear-gradient(to right, #79DAE8 , #2155CD);
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     .right{
-        display: flex;
-        flex-direction: row;
-        padding: 1em;
-
-        img{
-            border-radius: 50%;
-            height: 50px;
-            width: 50px;
-        }
-        h4 {
-            margin: 1em 0 0 1em;
-        }
+        margin: 0 0 0 5em;
     }
     .left{
         padding-right: 2em;

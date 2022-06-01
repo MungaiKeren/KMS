@@ -5,8 +5,8 @@ export function Navigation(props){
     return (
         <div className="navigation">
             <div className="right">
-                <img src="{}" alt="logo" height="50px" width="50px" />
                 <h4>Kenya Machinery Services</h4>
+                <p>Tools and equipment supplies</p>
             </div>
             <div className="left">
                 <ul>
