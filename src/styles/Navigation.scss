@@ -22,5 +22,16 @@
 }
 
 .container{
-    padding: 5em;
+    padding: 5px 2em 0 2em;
+    .categories{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+    .content{
+        border: 1px solid #D0C9C0;
+        border-radius: 5%;
+        width: 10vw;
+        text-align: center;
+    }
 }
