@@ -2,7 +2,7 @@ import React from "react";
 
 import img1 from "../assets/Images/100KVA Carltons-UK(Cummins Engine).jpg"
 import img2 from "../assets/Images/IMG-20220531-WA0009.jpg"
-import img3 from "../assets/Images/SilentDieselGenerator GL1200ED.jpg"
+import img3 from "../assets/Images/PowerItalia RT16800ED.jpg"
 
 
 const Cards = (props) => {
@@ -10,7 +10,7 @@ const Cards = (props) => {
         <div className="cards">
             <div className="card">
                 <div className="img-top">
-                    <img src={props.img} height="300px" width="400px" alt={props.altText} />
+                    <img src={props.img} height="330px" width="350px" alt={props.altText} />
                 </div>
                 <div className="card-body">
                     <span>
@@ -28,6 +28,7 @@ export function Card(props){
         <div className="contents">
             <Cards 
                 img={img1}
+                altText="100KVA Carltons-UK(Cummins Engine)"
                 cardBody="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
             />
             <Cards 
@@ -36,6 +37,7 @@ export function Card(props){
             />
             <Cards 
                 img={img3}
+                altText="SilentDieselGenerator GL1200ED"
                 cardBody="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
             />
         </div>
