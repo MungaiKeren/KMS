@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./App.scss";
 import LandingPage from './pages/LandingPage';
 import AboutPage from "./pages/AboutPage";
+import Services from "./pages/Services";
+import ContactUs from "./pages/ContactUs";
 
 export function App(){
     return (
@@ -16,6 +18,14 @@ export function App(){
                 <Route 
                     path="/about/"
                     element={<AboutPage />}
+                />
+                <Route 
+                  path="/services/"
+                  element={<Services />}
+                />
+                <Route 
+                  path="/contact/"
+                  element={<ContactUs />}
                 />
             </Routes>
         </BrowserRouter>

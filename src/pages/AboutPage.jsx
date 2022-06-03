@@ -6,7 +6,7 @@ export function AboutPage(props){
         <>
         <Navigation />
         <div className="content">
-            <h1>About Page</h1>
+            <h1>About Us</h1>
         </div>
         </>
     )

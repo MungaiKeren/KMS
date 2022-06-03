@@ -18,8 +18,12 @@ export function Navigation(props){
                     <li onClick={()=>{
                         window.location.href = "/about/"
                     }}>About Us</li>
-                    <li>Services</li>
-                    <li>Contact Us</li>
+                    <li onClick={()=>{
+                        window.location.href = "/services/"
+                    }} >Services</li>
+                    <li onClick={()=>{
+                        window.location.href = "/contact/"
+                    }} >Contact Us</li>
                 </ul>
 
             </div>
