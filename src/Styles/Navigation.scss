@@ -17,6 +17,15 @@
                 text-decoration: none;
                 display: inline;
                 padding: 1em;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            li:hover{
+                text-decoration: underline;
+                color: #FFFF;
+                display: inline;
+                padding: 1em;
+                cursor: pointer;
             }
         }
     }
@@ -36,6 +45,7 @@
         width: 10vw;
         text-align: center;
         cursor: pointer;
+        transition: background-color 1s ease-out 100ms
     }
     .content:hover{
         border: 1px solid #D0C9C0;
