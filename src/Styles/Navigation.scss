@@ -23,7 +23,7 @@
 }
 
 .container{
-    padding: 5px 2em 0 2em;
+    padding: 5px 2em 1em 2em;
     margin-top: 15px;
     .categories{
         display: flex;
@@ -32,8 +32,17 @@
     }
     .content{
         border: 1px solid #D0C9C0;
-        border-radius: 5%;
+        border-radius: 10px;
         width: 10vw;
         text-align: center;
+        cursor: pointer;
+    }
+    .content:hover{
+        border: 1px solid #D0C9C0;
+        border-radius: 10px;
+        width: 10vw;
+        text-align: center;
+        cursor: pointer;
+        background-color: #79DAE8;
     }
 }

@@ -1,0 +1,19 @@
+.contents{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2155CD;
+    .cards{
+        padding: 1em;
+    }
+    .card{
+        border-radius: 5%;
+        background-color: white;
+    }
+    .card-body{
+        padding: 10px;
+    }
+}
+
+
