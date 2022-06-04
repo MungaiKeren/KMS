@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { send } from 'emailjs-com';
 import Navigation from "../component/Navigation";
+import Footer from "../component/Footer";
 
 export function ContactUs(props){
 
     const [toSend, setToSend] = useState({
         from_name:"",
-        to_name:"",
         message:"",
         reply_to:"",
     });
@@ -47,12 +47,12 @@ export function ContactUs(props){
                         value={toSend.from_name}
                         onChange={handleChange}
                     /> <br />
-                    <label htmlFor="">To Name</label> <br />
+                    <label htmlFor="email">Email Address</label> <br />
                     <input 
                         type="text"
-                        name="to_name"
-                        placeholder="To Name"
-                        value={toSend.to_name}
+                        name="reply_to"
+                        placeholder="Your email"
+                        value={toSend.reply_to}
                         onChange={handleChange}
                     /> <br />
                     <label htmlFor="message">Your Message</label> <br />
@@ -63,18 +63,11 @@ export function ContactUs(props){
                         value={toSend.message}
                         onChange={handleChange}
                     /> <br />
-                    <label htmlFor="email">Email Address</label> <br />
-                    <input 
-                        type="text"
-                        name="reply_to"
-                        placeholder="Your email"
-                        value={toSend.reply_to}
-                        onChange={handleChange}
-                    /> <br />
                     <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
+        <Footer />
         </>
     )
 }

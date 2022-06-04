@@ -4,6 +4,7 @@ import Navigation from "../component/Navigation";
 import TopNav from "../component/TopNav";
 import BottomNav from "../component/BottomNav";
 import Card from "../component/Cards";
+import Footer from "../component/Footer";
 
 
 export function LandingPage(props){
@@ -12,7 +13,9 @@ export function LandingPage(props){
         <TopNav />
         <Navigation />
         <BottomNav />
-        <Card />            
+        <Card />
+        <h1>Some more content</h1>
+        <Footer />       
         </>
     )
 
