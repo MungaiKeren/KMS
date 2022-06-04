@@ -38,6 +38,12 @@ export function Footer(props){
                     <i className="fab fa-facebook-square"></i> &nbsp;
                     <i className="fab fa-instagram-square"></i> &nbsp;
                 </div>
+                <div className="col4">
+                    {/* floating button */}
+                    <div className="floatingIcon">
+                        <img src="" alt="" />
+                    </div>
+                </div>
             </div>
             <hr />
             <div className="bottom">

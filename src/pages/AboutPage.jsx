@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../component/Footer";
 import Navigation from "../component/Navigation";
 
 export function AboutPage(props){
@@ -8,6 +9,7 @@ export function AboutPage(props){
         <div className="content">
             <h1>About Us</h1>
         </div>
+        <Footer />
         </>
     )
 }

@@ -1,6 +1,6 @@
 .footer{
     background-color: #2155CD;
-    height: 310px;
+    height: 320px;
     width: 100%;
     .row{
         padding: 2em;
@@ -51,9 +51,13 @@
                 font-size: 46px;
             }
             .fa-instagram-square{
-                color: #5FD068;
+                color: #ded1c1;
                 font-size: 46px;
             }
+        }
+        .floatingIcon{
+            border: 1px solid #F2EBE9;
+            border-radius: 50%;
         }
     }
     hr{
