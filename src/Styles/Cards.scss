@@ -1,19 +1,48 @@
 .contents{
-    padding: 1em;
+    padding: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #2155CD;
-    .cards{
-        padding: 1em;
+    position: relative;
+    .left-icon{
+        img{
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 7px;   
+        }
+    }
+    .right-icon{
+        img{
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 2px;
+        }
     }
     .card{
-        border-radius: 5%;
-        background-color: white;
-        width: 350px;
-    }
-    .card-body{
-        padding: 10px;
+        border-radius: 2%;
+        .img-top{
+            padding: 2px;
+        }
+        img{
+            border: 2px solid black;
+            border-radius: 5%;
+        }
+        h3#imgLabel{
+            position: absolute;
+            background: #c30a1d;
+            padding-left: 2em !important;
+            z-index: 999;
+            color: #fff;
+            line-height: 31px;
+            font-size: 18px;
+            font-weight: 800;
+            bottom: -45px;
+            margin-left: 10em;
+            padding: 2px 15px;
+        }
     }
 }
 
