@@ -9,8 +9,7 @@ import img6 from "../assets/Images/ElectricPressureWasher4200PSL.jpg"
 import img7 from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
 import img8 from "../assets/Images/PetrolPressureWasher3200PSL.jpg"
 
-import iconL from '../assets/Images/left-arrow.jpg'
-import iconR from "../assets/Images/right-arrow.png"
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 
 export function Card(props){
@@ -28,32 +27,35 @@ export function Card(props){
         )
     }
 
-    const images = [img1,img2,img3,img4, img5, img6, img7, img8]
-    const [image, currentImage] = useState()
+    const images = [img1,img2,img3,img4, img5, img6, img7, img8];
+    const slides = [1,2,3,4,5,6,7,8];
+
+    const slideLeft = () => {
+        var slider = document.getElementById("slider");
+        slider.scrollLeft = slider.scrollLeft + 500;
+    }
+    const slideRight = () => {
+        var slider = document.getElementById("slider");
+        slider.scrollLeft = slider.scrollLeft - 500;
+    }
 
     return (
-        <div className="contents">
-            <div className="left-icon">
-                <img src={iconL} alt="" height="30px" width="30px"  />
+        <div className="main-slider-container">
+            <MdChevronLeft size={40} className="slider-icon left" onClick={slideLeft} />
+            <div id="slider">
+                {
+                    slides.map((slide,index)=>{
+                        return (
+                            <div className="slider-card">
+                                <div className="slider-card-image">
+
+                                </div>
+                            </div>
+                        )
+                    })
+                }
             </div>
-            <Cards 
-                img={img1}
-                altText="100KVA Carltons-UK(Cummins Engine)"
-                name="100KVA Carltins-UK"
-            />
-            <Cards 
-                img={img2}
-                altText="engine"
-                name="Engine"
-            />
-            <Cards 
-                img={img3}
-                altText="SilentDieselGenerator GL1200ED"
-                name="Silent Generator"
-            />
-            <div className="right-icon">
-                <img src={iconR} height="30px" width="30px" alt="" />
-            </div>
+            <MdChevronRight size={40} className="slider-icon right" onClick={slideRight} />
         </div>
     )
 
