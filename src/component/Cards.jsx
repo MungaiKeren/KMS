@@ -8,7 +8,7 @@ import img5 from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
 import img6 from "../assets/Images/PetrolPressureWasher3200PSL.jpg"
 import img7 from '../assets/Images/PowerItaliaRT16800ED.jpg'
 
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md"
 
 
 export function Card(props){

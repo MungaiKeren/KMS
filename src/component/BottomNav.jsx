@@ -1,4 +1,5 @@
 import React from "react";
+import {MdKeyboardArrowDown} from 'react-icons/md'
 
 const Item = (props) => {
     return (
@@ -6,7 +7,15 @@ const Item = (props) => {
             window.location.href = `/category/${props.cat}`
         }}>
             <div className="content">
-                <p>{props.txt}</p>
+                <p className="text">{props.txt}</p>
+                <MdKeyboardArrowDown size={20} className="arrow-down"/>
+            </div>
+            <div className="dropdown-content">
+                <span className="link">{props.link1}</span>
+                <span className="link">{props.link2}</span>
+                <span className="link">{props.link3}</span>
+                <span className="link">{props.link4}</span>
+                <span className="link">{props.link5}</span>
             </div>
         </div>
     )
@@ -19,6 +28,9 @@ export function BottomNav(){
                 <Item 
                     cat = "generators"
                     txt = "Generators"
+                    link1 = "CARLTON'S UK SILENT WATER COOLED DIESEL GENERATORS 3PHASE"
+                    link2 = "POWER ITALIA SILENT AIR COOLED DIESEL GENERATORS"
+                    link3 = ""
                 />
                 <Item 
                     cat = "Pressure Washer"
@@ -39,10 +51,6 @@ export function BottomNav(){
                 <Item 
                     cat = "powertools"
                     txt = "Power Tools"
-                />
-                <Item 
-                    cat = "lawnmowers"
-                    txt = "Lawn Mowers"
                 />
                 <Item 
                     cat = "lawnmowers"
