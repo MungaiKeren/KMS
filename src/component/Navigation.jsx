@@ -11,21 +11,15 @@ export function Navigation(props){
                 <h4>Kenya Machinery Services</h4>
             </div>
             <div className="left">
+            <nav class="shift">
                 <ul>
-                    <li onClick={()=>{
-                        window.location.href="/"
-                    }}>Home</li>
-                    <li onClick={()=>{
-                        window.location.href = "/about/"
-                    }}>About Us</li>
-                    <li onClick={()=>{
-                        window.location.href = "/services/"
-                    }} >Services</li>
-                    <li onClick={()=>{
-                        window.location.href = "/contact/"
-                    }} >Contact Us</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">More</a></li>
+                    <li><a href="#">Nice staff</a></li>
                 </ul>
-
+            </nav>
             </div>
         </div>
         </>
