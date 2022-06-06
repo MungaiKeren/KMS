@@ -13,11 +13,10 @@ export function Navigation(props){
             <div className="left">
             <nav class="shift">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Downloads</a></li>
-                    <li><a href="#">More</a></li>
-                    <li><a href="#">Nice staff</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/contacts/">Contact</a></li>
                 </ul>
             </nav>
             </div>

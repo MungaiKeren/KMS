@@ -24,7 +24,7 @@ export function App(){
                   element={<Services />}
                 />
                 <Route 
-                  path="/contact/"
+                  path="/contacts/"
                   element={<ContactUs />}
                 />
             </Routes>

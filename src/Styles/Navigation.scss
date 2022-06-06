@@ -1,17 +1,18 @@
 .navigation{
-    background-image: linear-gradient(to right, #D7A86E , #8E3200);
+    background-image: linear-gradient(to right, #ffff , #8E3200);
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: -5px;
+    height: 80px;
 
     .right{
-        margin: 0 0 0 5em;
+        margin-left: 5em;
     }
     .left{
         padding-right: 2em;
-        margin: 5px 0 1em 1em;
         nav {
             width: 100%;
             margin: 0 auto;
@@ -59,7 +60,7 @@
             height: 1px;
             content: '.';
             color: transparent;
-            background: #F1C40F;
+            background: #E45826;
             visibility: none;
             opacity: 0;
             z-index: -1;
