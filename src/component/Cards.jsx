@@ -1,34 +1,29 @@
 import React, { useState } from "react";
 
-import img1 from "../assets/Images/SilentDieselGenerator_GL1200ED.png"
-import img2 from "../assets/Images/download.jpg"
-import img3 from "../assets/Images/PowerItalia RT16800ED.jpg"
-import img4 from "../assets/Images/SilentDieselGenerator_GL1200ED.png"
-import img5 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"
-import img6 from "../assets/Images/ElectricPressureWasher4200PSL.jpg"
-import img7 from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
-import img8 from "../assets/Images/PetrolPressureWasher3200PSL.jpg"
+import img1 from "../assets/Images/new.jpg"
+import img2 from "../assets/Images/image.png"
+import img3 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"
+import img4 from "../assets/Images/ElectricPressureWasher4200PSL.jpg"
+import img5 from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
+import img6 from "../assets/Images/PetrolPressureWasher3200PSL.jpg"
+import img7 from '../assets/Images/PowerItaliaRT16800ED.jpg'
 
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 
 export function Card(props){
-    const Cards = (props) => {
-        return (
-            <div className="card">
-                <div className="img-top">
-                    <img src={props.img} height="400px" width="400px" alt={props.altText} />
-                    <h3 id="imgLabel">{props.name}</h3>
-                </div>
-                <div className="overlay">
-                    
-                </div>
-            </div>
-        )
-    }
 
-    const images = [img1,img2,img3,img4, img5, img6, img7, img8];
-    const slides = [1,2,3,4,5,6,7,8];
+    const slide = [
+        {img:img1,altText:"silent diesel generator price in kenya", label:"Silent Diesel Generator"},
+        {img:img2, altText:"", label:""},
+        {img:img3, altText:"power italia price in kenya", label:"Power Italia "},
+        {img:img4, altText:"", label:""},
+        // {img:img5, altText:"", label:""},
+        // {img:img6, altText:"", label:""},
+        {img:img7, altText:"", label:""},
+        // {img:img8, altText:"", label:""},
+    ]
+    // const slides = [1,2,3,4,5,6,7,8];
 
     const slideLeft = () => {
         var slider = document.getElementById("slider");
@@ -44,12 +39,12 @@ export function Card(props){
             <MdChevronLeft size={40} className="slider-icon left" onClick={slideLeft} />
             <div id="slider">
                 {
-                    slides.map((slide,index)=>{
+                    slide.map((slide,index)=>{
                         return (
-                            <div className="slider-card">
-                                <div className="slider-card-image">
-
-                                </div>
+                            <div className="slider-card" key={index}>
+                                <div className="slider-card-image" style={{background: `url(${slide.img})`}}></div>
+                                <p className="slider-card-title"> Card title</p>
+                                <p className="slider-card-description">Card description</p>
                             </div>
                         )
                     })
