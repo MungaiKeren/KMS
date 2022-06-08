@@ -12,7 +12,7 @@ export function TopNav(){
                 <div className="contact-info">
                     <h4>
                         <i className="fas fa-phone"></i> &nbsp;
-                        0706 367 488
+                        0706 367 488 / 0719
                     </h4>
                     <i className="fab fa-whatsapp-square"></i>
                 </div>

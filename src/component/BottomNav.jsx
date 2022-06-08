@@ -28,8 +28,8 @@ export function BottomNav(){
                 <Item 
                     cat = "generators"
                     txt = "Generators"
-                    link1 = "CARLTON'S UK SILENT WATER COOLED DIESEL GENERATORS 3PHASE"
-                    link2 = "POWER ITALIA SILENT AIR COOLED DIESEL GENERATORS"
+                    link1 = "DIESEL GENERATORS"
+                    link2 = "Petrol Generators"
                     link3 = ""
                 />
                 <Item 
