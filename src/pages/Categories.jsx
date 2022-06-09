@@ -1,17 +1,7 @@
 import CategoryItem from "../component/CategoryItem"
+import img from "../assets/Images/GasolineEngine.png"
 
 export function Category(props){
-
-    const Category = (props) => {
-        return (
-            <div className="category" onClick={()=>{
-                window.location.href = `/category/${props.cat}`
-            }}>
-                <h4>{props.text}</h4>
-                <p>{props.description}</p>
-            </div>
-        )
-    }
 
     // get url
     const url = () => {
@@ -24,6 +14,8 @@ export function Category(props){
     if (url() ==="generators"){
         return <CategoryItem 
             catName="Generators"
+            catImage={img}
+            catAltText="Gasoline Engine for sale in kenya"
             catDescription="This are generators"
         />
     }

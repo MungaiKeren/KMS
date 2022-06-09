@@ -37,7 +37,7 @@ export function BottomNav(){
                     txt = "Pressure Washer"
                 />
                 <Item 
-                    cat = "Petrol Engines"
+                    cat = "engines"
                     txt = "Petrol Engines"
                 />
                 <Item 
