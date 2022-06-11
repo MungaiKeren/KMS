@@ -17,7 +17,7 @@ export function CategoryItem(props){
             <img id="img" src={props.catImage} alt={props.catAltText} />
         </div>
         <p>{props.catDescription}</p>
-        </>
+        </>        
     )
 }
 export default CategoryItem;

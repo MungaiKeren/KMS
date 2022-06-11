@@ -66,3 +66,31 @@
     }
     
 }
+
+.table{
+    padding: 0 5em 2em 5em;
+    h3{
+        text-align: center;
+        text-decoration: underline;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        th{
+            padding: 12px 0 12px 6px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+        td, th{
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        tr:hover{
+            background-color: #ddd;
+        }
+    }
+}
