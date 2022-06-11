@@ -1,5 +1,19 @@
 .breadcrumbs{
-    background: pink;
+    padding: 2px;
+    background-color: green;
+    #span{
+        font-size: 35px;
+        padding: 5em;
+        color: white;
+    }
+    p{
+        font-size: 20px;
+        color: skyblue;
+        padding-left: 9em;
+    }
+    #catname{
+        cursor: pointer;
+    }
 }
 .text-center{
     text-align: center;
@@ -11,7 +25,7 @@
     display: grid;
     padding: 1em;
 }
-img{
+#img{
     border: 2px solid black;
     border-radius: 2%;
 }
