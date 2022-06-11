@@ -12,12 +12,30 @@ export function Category(props){
     }
 
     if (url() ==="generators"){
-        return <CategoryItem 
-            catName="Generators"
-            catImage={img}
-            catAltText="Gasoline Engine for sale in kenya"
-            catDescription="This are generators"
-        />
+        return (
+            <>
+            <CategoryItem 
+                catName="Generators"
+                catImage={img}
+                catAltText="Gasoline Engine for sale in kenya"
+                catDescription="This are generators"
+            /> 
+            <div className="table">
+                <h3>Gasoline 7.5hp Engines available</h3>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Model</th>
+                        <th>Horse Power</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>100 kva</td>
+                    </tr>
+                </table>
+            </div>
+            </>
+        )
     }
     if (url()==="engines"){
         return <CategoryItem 

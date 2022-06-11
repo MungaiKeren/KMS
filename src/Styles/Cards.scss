@@ -41,19 +41,27 @@
         width: 450px;
         height: 300px;
         background: white;
-        border-radius: 10px;
         display: inline-block;
         margin: 5px 5px 0 5px;
-        box-shadow: 2px 2px 2px 2px black;
+        box-shadow: 1px 1px 1px 1px black;
 
         .slider-card-image{
             width: 450px;
             height: 300px;
+            border: 2px solid black;
             background-color: rgb(240 240 240 /80%);
-            border-radius: 10px;
             background-repeat: no-repeat !important;
             background-size: cover !important;
             background-position: center !important;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        .slider-card-title{
+            margin: 0 !important;
+            background: red;
+            padding: 7px;
+            border: 1px solid greeen;
         }
     }
     
