@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {MdKeyboardArrowDown} from 'react-icons/md';
+import NavLink from "./NavLink";
 
 
 export function BottomNav(){
@@ -29,8 +30,14 @@ export function BottomNav(){
                             <MdKeyboardArrowDown size={20} className="arrow-down" />
                         </a>
                         <div className="dropdown-content">
-                            <span className="link">Diesel</span>
-                            <span className="link">Petrol</span>
+                            <NavLink 
+                                url = "/category/dieselgenerators"
+                                link = "Diesel Generators"
+                            />
+                            <NavLink 
+                                url = "/category/petrolgenerators"
+                                link = "Petrol Generators"
+                            />
                         </div>
                     </div>
                 </div>
