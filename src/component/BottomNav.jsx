@@ -18,11 +18,11 @@ export function BottomNav(){
                         </a>
                         <div className="dropdown-content">
                             <NavLink 
-                                url = "/category/dieselgenerators"
+                                url = "/category/generators/dieselgenerators"
                                 link = "Diesel Generators"
                             />
                             <NavLink 
-                                url = "/category/petrolgenerators"
+                                url = "/category/generators/petrolgenerators"
                                 link = "Petrol Generators"
                             />
                         </div>
@@ -37,11 +37,11 @@ export function BottomNav(){
                         </a>
                         <div className="dropdown-content">
                             <NavLink 
-                                url = ""
+                                url = "/category/engines/"
                                 link = ""
                             />
                             <NavLink 
-                                url =""
+                                url ="/category/engines/"
                                 link = ""
                             />
                         </div>                        
