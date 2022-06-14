@@ -17,8 +17,14 @@ export function BottomNav(){
                             <MdKeyboardArrowDown size={20} className="arrow-down" />
                         </a>
                         <div className="dropdown-content">
-                            <span className="link">Diesel</span>
-                            <span className="link">Petrol</span>
+                            <NavLink 
+                                url = "/category/dieselgenerators"
+                                link = "Diesel Generators"
+                            />
+                            <NavLink 
+                                url = "/category/petrolgenerators"
+                                link = "Petrol Generators"
+                            />
                         </div>
                     </div>
                 </div>
@@ -31,14 +37,14 @@ export function BottomNav(){
                         </a>
                         <div className="dropdown-content">
                             <NavLink 
-                                url = "/category/dieselgenerators"
-                                link = "Diesel Generators"
+                                url = ""
+                                link = ""
                             />
                             <NavLink 
-                                url = "/category/petrolgenerators"
-                                link = "Petrol Generators"
+                                url =""
+                                link = ""
                             />
-                        </div>
+                        </div>                        
                     </div>
                 </div>
 
