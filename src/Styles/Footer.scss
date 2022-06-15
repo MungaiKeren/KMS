@@ -1,5 +1,7 @@
+@import "./1_variables";
+
 .footer{
-    background-color: #01b603;
+    background-color: $primary2;
     height: 320px;
     width: 100%;
     .row{
@@ -43,7 +45,7 @@
                 color: #F2EBE9;
             }
             .fa-whatsapp-square{
-                color: #5FD068;
+                color: $primary;
                 font-size: 46px;
             }
             .fa-facebook-square{
