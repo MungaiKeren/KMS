@@ -7,7 +7,7 @@ export default function DieselGenerators() {
         <>
         <Navigation />
         <BottomNav />
-        <h1>This is the diesel page</h1>
+        <h1>This is the diesel generators page</h1>
         </>
     )
 };

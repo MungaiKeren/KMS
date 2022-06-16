@@ -17,7 +17,6 @@ export default function CategoryItem(props){
         <div className="displayImages">
             <img id="img" src={props.catImage} height="324" width="390" alt={props.catAltText} />
         </div>
-        <p>{props.catDescription}</p>
         </>        
     )
 }

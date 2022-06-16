@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {MdKeyboardArrowDown} from 'react-icons/md';
 import NavLink from "./NavLink";
 
@@ -64,7 +64,7 @@ export function BottomNav(){
                         </a>
                         <div className="dropdown-content">
                             <NavLink 
-                                url = "/category/gasolineEngines/"
+                                url = "/category/petrol pressure washer/"
                                 link = "Petrol Pressure washer"
                             />
                             <NavLink 
