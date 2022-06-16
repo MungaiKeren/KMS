@@ -15,12 +15,12 @@ export function Card(props){
 
     const slide = [
         {img:img1,altText:"silent diesel generator price in kenya", label:"Silent Diesel Generator"},
-        {img:img2, altText:"", label:""},
+        {img:img2, altText:"", label:"Lawn Mower"},
         {img:img3, altText:"power italia price in kenya", label:"Power Italia "},
-        {img:img4, altText:"", label:""},
+        {img:img4, altText:"", label:"pressure washer"},
         // {img:img5, altText:"", label:""},
         // {img:img6, altText:"", label:""},
-        {img:img7, altText:"", label:""},
+        {img:img7, altText:"", label:"Garden tools"},
         // {img:img8, altText:"", label:""},
     ]
     // const slides = [1,2,3,4,5,6,7,8];
@@ -42,9 +42,9 @@ export function Card(props){
                     slide.map((slide,index)=>{
                         return (
                             <div className="slider-card" key={index}>
-                                <div className="slider-card-image" style={{background: `url(${slide.img})`}}></div>
-                                <p className="slider-card-title"> Card title</p>
-                                <p className="slider-card-description">Card description</p>
+                                <div className="slider-card-image" style={{background: `url(${slide.img})`}}>
+                                    <span className="slider-card-title">{slide.label}</span>
+                                </div>
                             </div>
                         )
                     })

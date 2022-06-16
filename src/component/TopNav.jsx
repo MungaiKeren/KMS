@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../assets/Images/logo.png';
+import {MdPhone, MdMailOutline} from "react-icons/md";
 
 export function TopNav(){
 
@@ -11,10 +12,11 @@ export function TopNav(){
             <div className="right">
                 <div className="contact-info">
                     <h4>
-                        <i className="fas fa-phone"></i> &nbsp;
-                        0706 367 488
+                        <MdPhone /> &nbsp;
+                        0706 367 488 / 0719
                     </h4>
-                    <i className="fab fa-whatsapp-square"></i>
+                    <MdMailOutline size={20}/> &nbsp;
+                   <span className="mailInfo">info@kenyamachineryservices</span>
                 </div>
             </div>
         </div>

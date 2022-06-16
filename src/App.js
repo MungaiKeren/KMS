@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage';
 import AboutPage from "./pages/AboutPage";
 import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
+import Category from "./pages/Categories";
 
 export function App(){
     return (
@@ -26,6 +27,10 @@ export function App(){
                 <Route 
                   path="/contacts/"
                   element={<ContactUs />}
+                />
+                <Route 
+                    path="/category/*"
+                    element = {<Category />}
                 />
             </Routes>
         </BrowserRouter>

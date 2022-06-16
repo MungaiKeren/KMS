@@ -1,61 +1,135 @@
-import React from "react";
-import {MdKeyboardArrowDown} from 'react-icons/md'
+import React, { useState } from "react";
+import {MdKeyboardArrowDown} from 'react-icons/md';
+import NavLink from "./NavLink";
 
-const Item = (props) => {
-    return (
-        <div className="buttons" onClick={() => {
-            window.location.href = `/category/${props.cat}`
-        }}>
-            <div className="content">
-                <p className="text">{props.txt}</p>
-                <MdKeyboardArrowDown size={20} className="arrow-down"/>
-            </div>
-            <div className="dropdown-content">
-                <span className="link">{props.link1}</span>
-                <span className="link">{props.link2}</span>
-                <span className="link">{props.link3}</span>
-                <span className="link">{props.link4}</span>
-                <span className="link">{props.link5}</span>
-            </div>
-        </div>
-    )
-}
 
 export function BottomNav(){
+
+
     return (
         <div className="container">
             <div className="categories">
-                <Item 
-                    cat = "generators"
-                    txt = "Generators"
-                    link1 = "CARLTON'S UK SILENT WATER COOLED DIESEL GENERATORS 3PHASE"
-                    link2 = "POWER ITALIA SILENT AIR COOLED DIESEL GENERATORS"
-                    link3 = ""
-                />
-                <Item 
-                    cat = "Pressure Washer"
-                    txt = "Pressure Washer"
-                />
-                <Item 
-                    cat = "Petrol Engines"
-                    txt = "Petrol Engines"
-                />
-                <Item 
-                    cat = "gardentools"
-                    txt = "Garden Tools"
-                />
-                <Item 
-                    cat = "waterpumps"
-                    txt = "Water Pumps"
-                />
-                <Item 
-                    cat = "powertools"
-                    txt = "Power Tools"
-                />
-                <Item 
-                    cat = "lawnmowers"
-                    txt = "Lawn Mowers"
-                />
+
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/generators" className="text">
+                            Generators
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/generators/dieselgenerators"
+                                link = "Diesel Generators"
+                            />
+                            <NavLink 
+                                url = "/category/generators/petrolgenerators"
+                                link = "Petrol Generators"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/engines" className="text">
+                            Engines
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
+                            />
+                            <NavLink 
+                                url ="/category/engines/"
+                                link = ""
+                            />
+                        </div>                        
+                    </div>
+                </div>
+
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/gardentools" className="text">
+                            Garden Tools
+                        </a>
+                    </div>
+                </div>
+
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/pressurewasher" className="text">
+                            Pressure Washer
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
+                            />
+                            <NavLink 
+                                url ="/category/engines/"
+                                link = ""
+                            />
+                        </div>                        
+                    </div>
+                </div>
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/farmtractors" className="text">
+                            Farm Tractors
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
+                            />
+                            <NavLink 
+                                url ="/category/engines/"
+                                link = ""
+                            />
+                        </div>                        
+                    </div>
+                </div>
+
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/lawnmowers" className="text">
+                            Lawn Mowers
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
+                            />
+                            <NavLink 
+                                url ="/category/engines/"
+                                link = ""
+                            />
+                        </div>                        
+                    </div>
+                </div>
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/grasscutter" className="text">
+                            Grass Cutter
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
+                            />
+                            <NavLink 
+                                url ="/category/engines/"
+                                link = ""
+                            />
+                        </div>                        
+                    </div>
+                </div>
+
             </div>
         </div>
     )

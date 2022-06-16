@@ -1,0 +1,33 @@
+@import "../Styles/1_variables";
+
+.breadcrumbs{
+    padding: 2px;
+    background-color: $primary2;
+    #span{
+        font-size: 35px;
+        padding: 5em;
+        color: white;
+    }
+    p{
+        font-size: 20px;
+        color: white;
+        padding-left: 9em;
+    }
+    #catname{
+        cursor: pointer;
+    }
+}
+.text-center{
+    text-align: center;
+    font-weight: 700;
+    line-height: 14px;
+    font-size: 20px;
+}
+.displayImages{
+    display: grid;
+    padding: 1em;
+}
+#img{
+    border: 2px solid black;
+    border-radius: 2%;
+}
