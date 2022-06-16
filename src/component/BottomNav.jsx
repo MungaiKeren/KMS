@@ -37,8 +37,8 @@ export function BottomNav(){
                         </a>
                         <div className="dropdown-content">
                             <NavLink 
-                                url = "/category/engines/"
-                                link = ""
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
                             />
                             <NavLink 
                                 url ="/category/engines/"
@@ -53,6 +53,80 @@ export function BottomNav(){
                         <a href="/category/gardentools" className="text">
                             Garden Tools
                         </a>
+                    </div>
+                </div>
+
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/pressurewasher" className="text">
+                            Pressure Washer
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
+                            />
+                            <NavLink 
+                                url ="/category/engines/"
+                                link = ""
+                            />
+                        </div>                        
+                    </div>
+                </div>
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/farmtractors" className="text">
+                            Farm Tractors
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
+                            />
+                            <NavLink 
+                                url ="/category/engines/"
+                                link = ""
+                            />
+                        </div>                        
+                    </div>
+                </div>
+
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/lawnmowers" className="text">
+                            Lawn Mowers
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
+                            />
+                            <NavLink 
+                                url ="/category/engines/"
+                                link = ""
+                            />
+                        </div>                        
+                    </div>
+                </div>
+                <div className="buttons">
+                    <div className="content">
+                        <a href="/category/grasscutter" className="text">
+                            Grass Cutter
+                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        </a>
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url = "/category/gasolineEngines/"
+                                link = "Gasoline Engines"
+                            />
+                            <NavLink 
+                                url ="/category/engines/"
+                                link = ""
+                            />
+                        </div>                        
                     </div>
                 </div>
 
