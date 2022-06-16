@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 import {MdChevronRight} from 'react-icons/md'
 
 
-export function CategoryItem(props){
+export default function CategoryItem(props){
     return (
         <>
         <Navigation />
@@ -20,4 +20,3 @@ export function CategoryItem(props){
         </>        
     )
 }
-export default CategoryItem;
