@@ -1,6 +1,9 @@
 import CategoryItem from "../component/CategoryItem"
 import Footer from "../component/Footer";
 import img from "../assets/Images/GasolineEngine.png"
+import tractor from "../assets/Images/tractor.jpg"
+import pwasher from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
+import { useState } from "react";
 
 export default function Category(props){
 
@@ -10,12 +13,60 @@ export default function Category(props){
     return (
         <div>
             {pathname === "generators" && 
-                <CategoryItem
-                    catName="Generators"
-                    catImage={img}
-                    catAltText="Gasoline Engine for sale in kenya"
-                    catDescription="This are generators"
-                />
+                (
+                    <>
+                    <CategoryItem
+                        catName="Generators"
+                        catImage={img}
+                        catAltText="Gasoline Engine for sale in kenya"
+                        catDescription="This are generators"
+                    />
+                    <div className="table">
+                 <h3>Power Italia Silent Air Cooled Diesel Generators <span>
+                     (Single phase)</span> </h3>
+                 <table>
+                     <tr>
+                         <th>Name</th>
+                         <th>Model</th>
+                         <th>Horse Power</th>
+                         <th>Price</th>
+                     </tr>
+                     <tr>
+                         <td>Japan electrical</td>
+                         <td>Jec270</td>
+                         <td>7.5 hp</td>
+                         <td>12,500</td>
+                     </tr>
+                     <tr>
+                         <td>Stallion Germany</td>
+                         <td>SG250</td>
+                         <td>7.5hp</td>
+                         <td>12,500</td>
+                     </tr>
+                     <tr>
+                         <td>Gilardoni Italy</td>
+                         <td>GL275</td>
+                         <td>7.5hp</td>
+                         <td>12,500</td>
+                     </tr>
+                     <tr>
+                         <td>Power Italia</td>
+                         <td>R250</td>
+                         <td>7.5hp</td>
+                         <td>12,600</td>
+                     </tr>
+                     <tr>
+                         <td>Carltons UK</td>
+                         <td>C250</td>
+                         <td>7.5hp</td>
+                         <td>15,000</td>
+                     </tr>
+                 </table>
+             </div>            
+             <Footer />
+                   </>
+                )
+                
             }
             {pathname === "engines" && 
                 <CategoryItem
@@ -36,15 +87,15 @@ export default function Category(props){
             {pathname === "pressurewasher" && 
                 <CategoryItem
                     catName="Pressure Washer"
-                    catImage={img}
+                    catImage={pwasher}
                     catAltText="Pressure Washer for sale in kenya"
-                    catDescription="This are Pressure Washer"
+                    catDescription="Pressure Washer"
                 />
             }
             {pathname === "farmtractors" && 
                 <CategoryItem
                     catName="Farm Tractors"
-                    catImage={img}
+                    catImage={tractor}
                     catAltText="Farm Tractors for sale in kenya"
                     catDescription="Farm Tractors"
                 />
@@ -70,49 +121,7 @@ export default function Category(props){
 
 
     //         <hr />
-    //         <div className="table">
-    //             <h3>Power Italia Silent Air Cooled Diesel Generators <span>
-    //                 (Single phase)</span> </h3>
-    //             <table>
-    //                 <tr>
-    //                     <th>Name</th>
-    //                     <th>Model</th>
-    //                     <th>Horse Power</th>
-    //                     <th>Price</th>
-    //                 </tr>
-    //                 <tr>
-    //                     <td>Japan electrical</td>
-    //                     <td>Jec270</td>
-    //                     <td>7.5 hp</td>
-    //                     <td>12,500</td>
-    //                 </tr>
-    //                 <tr>
-    //                     <td>Stallion Germany</td>
-    //                     <td>SG250</td>
-    //                     <td>7.5hp</td>
-    //                     <td>12,500</td>
-    //                 </tr>
-    //                 <tr>
-    //                     <td>Gilardoni Italy</td>
-    //                     <td>GL275</td>
-    //                     <td>7.5hp</td>
-    //                     <td>12,500</td>
-    //                 </tr>
-    //                 <tr>
-    //                     <td>Power Italia</td>
-    //                     <td>R250</td>
-    //                     <td>7.5hp</td>
-    //                     <td>12,600</td>
-    //                 </tr>
-    //                 <tr>
-    //                     <td>Carltons UK</td>
-    //                     <td>C250</td>
-    //                     <td>7.5hp</td>
-    //                     <td>15,000</td>
-    //                 </tr>
-    //             </table>
-    //         </div>            
-    //         <Footer />
+    //         
     //         </>
     //     )
     // }

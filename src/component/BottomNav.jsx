@@ -14,7 +14,7 @@ export function BottomNav(){
                     <div className="content">
                         <a href="/category/generators" className="text">
                             Generators
-                            <MdKeyboardArrowDown size={20} className="arrow-down" />
+                            <span><MdKeyboardArrowDown size={20} className="arrow-down" /></span>                            
                         </a>
                         <div className="dropdown-content">
                             <NavLink 
@@ -65,11 +65,11 @@ export function BottomNav(){
                         <div className="dropdown-content">
                             <NavLink 
                                 url = "/category/gasolineEngines/"
-                                link = "Gasoline Engines"
+                                link = "Petrol Pressure washer"
                             />
                             <NavLink 
                                 url ="/category/engines/"
-                                link = ""
+                                link = "Electric Pressure washer"
                             />
                         </div>                        
                     </div>

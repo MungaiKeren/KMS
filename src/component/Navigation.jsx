@@ -11,7 +11,7 @@ export function Navigation(props){
                 <h4>Kenya Machinery Services</h4>
             </div>
             <div className="left">
-            <nav class="shift">
+            <nav className="shift">
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about/">About</a></li>
