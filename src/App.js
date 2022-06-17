@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import Category from "./pages/Categories";
+import DieselGenerators from "./pages/Generators/Diesel";
 
 export function App(){
     return (
@@ -32,6 +33,10 @@ export function App(){
                     path="/category/*"
                     element = {<Category />}
                 />
+                <Route
+                    path="/category/generators/dieselgenerators"
+                    element={<DieselGenerators />}
+                />                
             </Routes>
         </BrowserRouter>
         </>

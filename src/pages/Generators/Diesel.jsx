@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../Navigation";
-import BottomNav from "../BottomNav";
+import Navigation from "../../component/Navigation";
+import BottomNav from "../../component/BottomNav";
 
 export default function DieselGenerators() {
     return (

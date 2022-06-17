@@ -4,7 +4,7 @@ import img from "../assets/Images/GasolineEngine.png"
 import tractor from "../assets/Images/tractor.jpg"
 import pwasher from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
 import { useState } from "react";
-import DieselGenerators from "../component/Generators/Diesel";
+import DieselGenerators from "./Generators/Diesel";
 
 
 export default function Category(props){
