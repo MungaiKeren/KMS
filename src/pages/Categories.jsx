@@ -88,10 +88,12 @@ export default function Category(props){
             {pathname === "gardentools" && 
                 <CategoryItem
                     catName="Garden Tools"
-                    catImage
-                    catAltText="Garden Tools for sale in kenya"
-                    catDescription="This are Garden Tools"
-                />
+                    catImage={brushCutter}
+                    catAltText="Brush Cutters for sale in kenya"
+                    catDescription="Grass Cutter"
+                    name1="Brush Cutters 8 in 1"
+                    moreDescription1="Model: NTB 8:1 Multi tool Honda 8 in 1 attachments. Best for grass cutting, hedge trimming and tree cutting."
+            />
             }
             {pathname === "pressurewasher" && 
                 <>
@@ -135,16 +137,6 @@ export default function Category(props){
                     catImage
                     catAltText="Lawn Mowers for sale in kenya"
                     catDescription="Farm Tractors"
-                />
-            }
-            {pathname === "grasscutter" && 
-                <CategoryItem
-                    catName="Grass Cutter"
-                    catImage={brushCutter}
-                    catAltText="Brush Cutters for sale in kenya"
-                    catDescription="Grass Cutter"
-                    name1="Model: NTB 8:1 Multi tool"
-                    moreDescription1="Honda 8 in 1 attachments. Best for grass cutting, hedge trimming and tree cutting."
                 />
             }
         </div>

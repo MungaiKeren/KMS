@@ -1,5 +1,5 @@
 import React from "react";
-import {MdKeyboardArrowDown} from 'react-icons/md';
+import {MdChevronLeft, MdKeyboardArrowDown} from 'react-icons/md';
 import NavLink from "./NavLink";
 
 
@@ -13,9 +13,9 @@ export function BottomNav(){
                 <div className="buttons">
                     <div className="content">
                         <a href="/category/generators" className="text">
-                            Generators
-                            <span><MdKeyboardArrowDown size={20} className="arrow-down" /></span>                            
+                            Generators                        
                         </a>
+                        <MdKeyboardArrowDown size={20} className="arrow-down" />
                         <div className="dropdown-content">
                             <NavLink 
                                 url = "/category/generators/dieselgenerators"
@@ -33,8 +33,8 @@ export function BottomNav(){
                     <div className="content">
                         <a href="/category/engines" className="text">
                             Engines
-                            <MdKeyboardArrowDown size={20} className="arrow-down" />
                         </a>
+                        <MdKeyboardArrowDown size={20} className="arrow-down" />
                         <div className="dropdown-content">
                             <NavLink 
                                 url = "/category/gasolineEngines/"
@@ -53,6 +53,21 @@ export function BottomNav(){
                         <a href="/category/gardentools" className="text">
                             Garden Tools
                         </a>
+                        <MdKeyboardArrowDown size={20} className="arrow-down" />
+                        <div className="dropdown-content">
+                            <NavLink 
+                                url="/category/gardentools/brushcutter"
+                                link="Brush Cutters"
+                            />
+                            <NavLink 
+                                url="/category/gardentools/grasscutter"
+                                link="Grass Cutter"
+                            />
+                            <NavLink 
+                                url="/category/gardentools/lawnmowers"
+                                link="Lawn Mowers"
+                            />
+                        </div>
                     </div>
                 </div>
 
@@ -60,8 +75,8 @@ export function BottomNav(){
                     <div className="content">
                         <a href="/category/pressurewasher" className="text">
                             Pressure Washer
-                            <MdKeyboardArrowDown size={20} className="arrow-down" />
                         </a>
+                        <MdKeyboardArrowDown size={20} className="arrow-down" />
                         <div className="dropdown-content">
                             <NavLink 
                                 url = "/category/petrol pressure washer/"
@@ -78,8 +93,8 @@ export function BottomNav(){
                     <div className="content">
                         <a href="/category/farmtractors" className="text">
                             Farm Tractors
-                            <MdKeyboardArrowDown size={20} className="arrow-down" />
                         </a>
+                        <MdKeyboardArrowDown size={20} className="arrow-down" />
                         <div className="dropdown-content">
                             <NavLink 
                                 url = "/category/farmtractors/stallions"
@@ -96,44 +111,6 @@ export function BottomNav(){
                         </div>                        
                     </div>
                 </div>
-
-                <div className="buttons">
-                    <div className="content">
-                        <a href="/category/lawnmowers" className="text">
-                            Lawn Mowers
-                            <MdKeyboardArrowDown size={20} className="arrow-down" />
-                        </a>
-                        <div className="dropdown-content">
-                            <NavLink 
-                                url = "/category/gasolineEngines/"
-                                link = "Gasoline Engines"
-                            />
-                            <NavLink 
-                                url ="/category/engines/"
-                                link = ""
-                            />
-                        </div>                        
-                    </div>
-                </div>
-                <div className="buttons">
-                    <div className="content">
-                        <a href="/category/grasscutter" className="text">
-                            Grass Cutter
-                            <MdKeyboardArrowDown size={20} className="arrow-down" />
-                        </a>
-                        <div className="dropdown-content">
-                            <NavLink 
-                                url = "/category/gasolineEngines/"
-                                link = "Gasoline Engines"
-                            />
-                            <NavLink 
-                                url ="/category/engines/"
-                                link = ""
-                            />
-                        </div>                        
-                    </div>
-                </div>
-
             </div>
         </div>
     )
