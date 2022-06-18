@@ -21,6 +21,7 @@ export default function CategoryItem(props){
                 <img src={props.catImage} alt={props.catAltText} />
                 <div className="imageOverlay">
                     <p>{props.name1}</p>
+                    <p>{props.moreDescription1}</p>
                 </div>
             </div>
             <div className="imageContainer" onClick={()=>{
@@ -29,6 +30,7 @@ export default function CategoryItem(props){
                 <img src={props.catImage2} alt={props.catAltText2} />
                 <div className="imageOverlay">
                     <p>{props.name2}</p>
+                    <p>{props.moreDescription2}</p>              
                 </div>
             </div>
             <div className="imageContainer" onClick={()=>{
@@ -37,6 +39,7 @@ export default function CategoryItem(props){
                 <img src={props.catImage3} alt={props.catAltText3} />
                 <div className="imageOverlay">
                     <p>{props.name3}</p>
+                    <p>{props.moreDescription3}</p>
                 </div>
             </div>
         </div>

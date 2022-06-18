@@ -7,6 +7,7 @@ import CarltonsUK from "../assets/Images/new.jpg"
 
 // engine images
 import gasolineEngine from "../assets/Images/GasolineEngine.png"
+import carltonsuk from "../assets/Images/IMG-20220606-WA0004-removebg-preview (1) (1).jpg"
 
 // garden tools images
 
@@ -45,50 +46,8 @@ export default function Category(props){
 
                         catImage3={CarltonsUK}
                         catAltText3="100KVA Carltons-UK (Cummins Engine)available for sale in kenya"
-                        name3="100KVA Carltons-UK(Cummins Engine) SILENT WATER COOLED DIESEL GENERATOR (3PHASE)"
+                        name3="100KVA Carltons-UK(Cummins Engine) Diesel Generator (3PHASE)"
                     />
-                    <div className="table">
-                        <h3>Power Italia Silent Air Cooled Diesel Generators <span>
-                            (Single phase)</span> </h3>
-                        <table>
-                            <tr>
-                                <th>Name</th>
-                                <th>Model</th>
-                                <th>Horse Power</th>
-                                <th>Price</th>
-                            </tr>
-                            <tr>
-                                <td>Japan electrical</td>
-                                <td>Jec270</td>
-                                <td>7.5 hp</td>
-                                <td>12,500</td>
-                            </tr>
-                            <tr>
-                                <td>Stallion Germany</td>
-                                <td>SG250</td>
-                                <td>7.5hp</td>
-                                <td>12,500</td>
-                            </tr>
-                            <tr>
-                                <td>Gilardoni Italy</td>
-                                <td>GL275</td>
-                                <td>7.5hp</td>
-                                <td>12,500</td>
-                            </tr>
-                            <tr>
-                                <td>Power Italia</td>
-                                <td>R250</td>
-                                <td>7.5hp</td>
-                                <td>12,600</td>
-                            </tr>
-                            <tr>
-                                <td>Carltons UK</td>
-                                <td>C250</td>
-                                <td>7.5hp</td>
-                                <td>15,000</td>
-                            </tr>
-                        </table>
-                    </div>            
                     <Footer />
                    </>
                 )
@@ -98,9 +57,15 @@ export default function Category(props){
                 <CategoryItem
                     catName="Engines"
                     catImage={gasolineEngine}
-                    catAltText="Gasoline Engine for sale in kenya"
+                    catAltText="GL27 Gasoline Engine available for sale in kenya"
                     catDescription="This are Engines"
-                    name1="GL275 Gasoline Engine"
+                    name1="GL27"
+                    moreDescription1="Gasoline Engine"
+
+                    catImage2={carltonsuk}
+                    catAltText2="carltons UK Gasoline engine for sale in Kenya"
+                    name2="Electronic Ignition"
+                    moreDescription2="Carltons UK Gasoline Engine 7.5 KVA C250"
                 />
             }
             {pathname === "gardentools" && 
