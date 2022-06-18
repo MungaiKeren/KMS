@@ -19,7 +19,7 @@ export function BottomNav(){
                         <div className="dropdown-content">
                             <NavLink 
                                 url = "/category/generators/dieselgenerators"
-                                link = "Diesel Generators"
+                                link = "Diesel Generators (Cummins Engine)"
                             />
                             <NavLink 
                                 url = "/category/generators/petrolgenerators"
@@ -42,7 +42,7 @@ export function BottomNav(){
                             />
                             <NavLink 
                                 url ="/category/engines/"
-                                link = ""
+                                link = "Cummins"
                             />
                         </div>                        
                     </div>
@@ -65,11 +65,11 @@ export function BottomNav(){
                         <div className="dropdown-content">
                             <NavLink 
                                 url = "/category/petrol pressure washer/"
-                                link = "Petrol Pressure washer"
+                                link = "Petrol Pressure Washer (Tamashi Japan)"
                             />
                             <NavLink 
-                                url ="/category/engines/"
-                                link = "Electric Pressure washer"
+                                url ="/category/"
+                                link = "Electric Pressure Washer (Cummins Available)"
                             />
                         </div>                        
                     </div>

@@ -15,6 +15,10 @@ import gas3 from "../assets/Images/IMG-20220606-WA0002-removebg-preview (1).jpg"
 
 // pressure washer images
 import pwasher from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
+import pwasher2 from "../assets/Images/PetrolPressureWasher3200PSL.jpg"
+import ePwasher4200 from "../assets/Images/ElectricPressureWasher4200PSL.jpg"
+// import ePwasher3400 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"
+// import ePWasher2300 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"
 
 // farm tractor
 import tractor from "../assets/Images/tractor.jpg"
@@ -88,12 +92,18 @@ export default function Category(props){
                 />
             }
             {pathname === "pressurewasher" && 
+                <>
                 <CategoryItem
                     catName="Pressure Washer"
                     catImage={pwasher}
-                    catAltText="Pressure Washer for sale in kenya"
-                    catDescription="Pressure Washer"
+                    catAltText="Petrol Pressure Washer for sale in kenya"
+                    name1="Gasoline High PressureWasher"
+                    moreDescription1="2600PSL"
                 />
+                <div className="variations">
+                    
+                </div>
+                </>
             }
             {pathname === "farmtractors" && 
                 <CategoryItem
