@@ -1,6 +1,7 @@
 import BottomNav from "./BottomNav";
 import Navigation from "./Navigation";
 import {MdChevronRight} from 'react-icons/md'
+import BreadCrumbs from "./BreadCrumbs";
 
 
 export default function CategoryItem(props){
@@ -10,10 +11,9 @@ export default function CategoryItem(props){
         <Navigation />
         <BottomNav />
         <hr />
-        <div className="breadcrumbs">
-            <span id="span">{props.catName} for sale in Kenya.</span>
-            <p>Home <MdChevronRight size={15} /> <span id="catname">{props.catName}</span> </p>
-        </div>
+        <BreadCrumbs 
+            catName={props.catName}
+        />
         <div className="displayImages">
             <div className="imageContainer" onClick={()=>{
                 if (props.url) return window.location.href = props.url

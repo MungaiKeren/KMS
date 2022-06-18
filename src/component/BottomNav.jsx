@@ -82,12 +82,16 @@ export function BottomNav(){
                         </a>
                         <div className="dropdown-content">
                             <NavLink 
-                                url = "/category/gasolineEngines/"
-                                link = "Gasoline Engines"
+                                url = "/category/farmtractors/stallions"
+                                link = "Stallions"
                             />
                             <NavLink 
-                                url ="/category/engines/"
-                                link = ""
+                                url ="/category/farmtractors/levhart"
+                                link = "Levhart"
+                            />
+                            <NavLink
+                                url="/category/farmtractors/carltons"
+                                link="Carltons"
                             />
                         </div>                        
                     </div>

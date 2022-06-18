@@ -22,6 +22,7 @@ import ePwasher4200 from "../assets/Images/ElectricPressureWasher4200PSL.jpg"
 
 // farm tractor
 import tractor from "../assets/Images/tractor.jpg"
+import tractor2 from "../assets/Images/tractor2.jpg"
 
 // lawn mower images
 
@@ -99,9 +100,16 @@ export default function Category(props){
                     catAltText="Petrol Pressure Washer for sale in kenya"
                     name1="Gasoline High PressureWasher"
                     moreDescription1="2600PSL"
+
+                    catImage2={ePwasher4200}
+                    catAltText2="Electric Pressure Washer available for sale in kenya"
+                    name2="Electric Pressure Washer"
+                    moreDescription2="4200PSL"
                 />
                 <div className="variations">
-                    
+                    <p>2600ps</p>
+                    <p>4200psl</p>
+                    <p>4200psl</p>
                 </div>
                 </>
             }
@@ -109,8 +117,15 @@ export default function Category(props){
                 <CategoryItem
                     catName="Farm Tractors"
                     catImage={tractor}
-                    catAltText="Farm Tractors for sale in kenya"
+                    catAltText="Stallions Farm tractor available for sale in kenya"
                     catDescription="Farm Tractors"
+                    name1="Stallions Farm Tractors Available"
+                    moreDescription1=""
+
+                    catImage2={tractor2}
+                    catAltText2=""
+                    name2="LevHart Farm tractors available for sale in Kenya"
+                    moreDescription2=""
                 />
             }
             {pathname === "lawnmowers" && 
