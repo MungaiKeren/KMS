@@ -15,9 +15,29 @@ export default function CategoryItem(props){
             <p>Home <MdChevronRight size={15} /> <span id="catname">{props.catName}</span> </p>
         </div>
         <div className="displayImages">
-            <img id="img" src={props.catImage} height="324" width="390" alt={props.catAltText} />
-            <div className="imageOverlay">
-                <p>Carltons UK Silent Water Cooled Diesel Generator</p>
+            <div className="imageContainer" onClick={()=>{
+                if (props.url) return window.location.href = props.url
+            }}>
+                <img src={props.catImage} height={324} width={390} alt={props.catAltText} />
+                <div className="imageOverlay">
+                    <p>{props.name1}</p>
+                </div>
+            </div>
+            <div className="imageContainer" onClick={()=>{
+                if (props.url) return window.location.href = props.url
+            }}>
+                <img src={props.catImage2} alt={props.catAltText2} />
+                <div className="imageOverlay">
+                    <p>{props.name2}</p>
+                </div>
+            </div>
+            <div className="imageContainer" onClick={()=>{
+                if (props.url) return window.location.href = props.url
+            }}>
+                <img src={props.catImage3} alt={props.catAltText3} />
+                <div className="imageOverlay">
+                    <p>{props.name3}</p>
+                </div>
             </div>
         </div>
         </>        

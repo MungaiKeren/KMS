@@ -78,7 +78,7 @@ export default function Category(props){
                     catImage={gasolineEngine}
                     catAltText="Gasoline Engine for sale in kenya"
                     catDescription="This are Engines"
-                    imgDescription="Gasoline Engine"
+                    name1="GL275 Gasoline Engine"
                 />
             }
             {pathname === "gardentools" && 
