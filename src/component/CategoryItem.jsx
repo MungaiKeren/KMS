@@ -18,7 +18,7 @@ export default function CategoryItem(props){
             <div className="imageContainer" onClick={()=>{
                 if (props.url) return window.location.href = props.url
             }}>
-                <img src={props.catImage} height={324} width={390} alt={props.catAltText} />
+                <img src={props.catImage} alt={props.catAltText} />
                 <div className="imageOverlay">
                     <p>{props.name1}</p>
                 </div>

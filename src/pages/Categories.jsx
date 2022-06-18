@@ -1,17 +1,30 @@
 import CategoryItem from "../component/CategoryItem"
 import Footer from "../component/Footer";
+// generator images
+import PowerItalia from "../assets/Images/PowerItaliaRT16800ED.jpg"
+import Gilardoni from "../assets/Images/this-image.jpg"
+import CarltonsUK from "../assets/Images/new.jpg"
+
+// engine images
 import gasolineEngine from "../assets/Images/GasolineEngine.png"
-import tractor from "../assets/Images/tractor.jpg"
+
+// garden tools images
+
+// pressure washer images
 import pwasher from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
-import { useState } from "react";
-import DieselGenerators from "./Generators/Diesel";
+
+// farm tractor
+import tractor from "../assets/Images/tractor.jpg"
+
+// lawn mower images
+
+// grass cutter images
 
 
 export default function Category(props){
 
     // get url
     const pathname = window.location.pathname.split("/")[2];
-    const [subCat, setSubCategory] = useState([]);
 
 
     return (
@@ -21,9 +34,18 @@ export default function Category(props){
                     <>
                     <CategoryItem
                         catName="Generators"
-                        catImage
-                        catAltText="Gasoline Engine for sale in kenya"
+                        catImage={PowerItalia}
+                        catAltText="Diesel Engine for sale in kenya"
                         catDescription="This are generators"
+                        name1="Power Italia Silent Air Cooled Diesel Generator (single phase)"
+
+                        catImage2 = {Gilardoni}
+                        catAltText2="Gilardoni Italy Silent Diesel Generators available for sale in kenya"
+                        name2="Gilardoni Italy Silent Diesel Generators (GL1200ED)"
+
+                        catImage3={CarltonsUK}
+                        catAltText3="100KVA Carltons-UK (Cummins Engine)available for sale in kenya"
+                        name3="100KVA Carltons-UK(Cummins Engine) SILENT WATER COOLED DIESEL GENERATOR (3PHASE)"
                     />
                     <div className="table">
                         <h3>Power Italia Silent Air Cooled Diesel Generators <span>
