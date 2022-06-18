@@ -16,6 +16,9 @@ export default function CategoryItem(props){
         </div>
         <div className="displayImages">
             <img id="img" src={props.catImage} height="324" width="390" alt={props.catAltText} />
+            <div className="imageOverlay">
+                <p>Carltons UK Silent Water Cooled Diesel Generator</p>
+            </div>
         </div>
         </>        
     )
