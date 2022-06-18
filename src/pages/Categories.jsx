@@ -1,4 +1,4 @@
-import CategoryItem from "../component/CategoryItem"
+import CategoryItem from "../component/CategoryItem";
 import Footer from "../component/Footer";
 // generator images
 import PowerItalia from "../assets/Images/PowerItaliaRT16800ED.jpg"
@@ -8,6 +8,8 @@ import CarltonsUK from "../assets/Images/new.jpg"
 // engine images
 import gasolineEngine from "../assets/Images/GasolineEngine.png"
 import carltonsuk from "../assets/Images/IMG-20220606-WA0004-removebg-preview (1) (1).jpg"
+import gas2 from "../assets/Images/IMG-20220606-WA0003-removebg-preview (1).jpg"
+import gas3 from "../assets/Images/IMG-20220606-WA0002-removebg-preview (1).jpg"
 
 // garden tools images
 
@@ -58,7 +60,6 @@ export default function Category(props){
                     catName="Engines"
                     catImage={gasolineEngine}
                     catAltText="GL27 Gasoline Engine available for sale in kenya"
-                    catDescription="This are Engines"
                     name1="GL27"
                     moreDescription1="Gasoline Engine"
 
@@ -66,6 +67,16 @@ export default function Category(props){
                     catAltText2="carltons UK Gasoline engine for sale in Kenya"
                     name2="Electronic Ignition"
                     moreDescription2="Carltons UK Gasoline Engine 7.5 KVA C250"
+
+                    catImage3={gas2}
+                    catAltText3="carltons UK Gasoline engine for sale in Kenya"
+                    name3="Gasoline Engine For sale in Kenya"
+                    moreDescription3="Carltons UK Gasoline Engine 7.5 KVA C250"
+
+                    catImage4={gas3}
+                    catAltText4="carltons UK Gasoline engine for sale in Kenya"
+                    name4="Gasoline Engine For sale in Kenya"
+                    moreDescription4="Carltons UK Gasoline Engine 7.5 KVA C250"
                 />
             }
             {pathname === "gardentools" && 
