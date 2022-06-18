@@ -27,6 +27,7 @@ import tractor2 from "../assets/Images/tractor2.jpg"
 // lawn mower images
 
 // grass cutter images
+import brushCutter from "../assets/Images/brushcutter2.jpg";
 
 
 export default function Category(props){
@@ -96,12 +97,12 @@ export default function Category(props){
                 <>
                 <CategoryItem
                     catName="Pressure Washer"
-                    catImage={pwasher}
+                    catImage={ePwasher4200}
                     catAltText="Petrol Pressure Washer for sale in kenya"
                     name1="Gasoline High PressureWasher"
-                    moreDescription1="2600PSL"
+                    moreDescription1="4200 PSL"
 
-                    catImage2={ePwasher4200}
+                    catImage2={pwasher}
                     catAltText2="Electric Pressure Washer available for sale in kenya"
                     name2="Electric Pressure Washer"
                     moreDescription2="4200PSL"
@@ -139,9 +140,11 @@ export default function Category(props){
             {pathname === "grasscutter" && 
                 <CategoryItem
                     catName="Grass Cutter"
-                    catImage
-                    catAltText="Grass Cutter for sale in kenya"
+                    catImage={brushCutter}
+                    catAltText="Brush Cutters for sale in kenya"
                     catDescription="Grass Cutter"
+                    name1="Model: NTB 8:1 Multi tool"
+                    moreDescription1="Honda 8 in 1 attachments. Best for grass cutting, hedge trimming and tree cutting."
                 />
             }
         </div>
