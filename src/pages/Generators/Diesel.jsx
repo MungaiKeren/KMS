@@ -1,24 +1,12 @@
 import React, { useState } from "react";
 import Navigation from "../../component/Navigation";
 import BottomNav from "../../component/BottomNav";
-import BreadCrumbs from '../../component/BreadCrumbs';
+import BreadCrumbs from '../../component/Utils/BreadCrumbs';
 import carltons from "../../assets/Images/IMG-20220531-WA0009.jpg"
 import Footer from "../../component/Footer";
-import { BsFillCaretDownFill, BsFillCaretUpFill } from "react-icons/bs";
+import NavGroup from "../../component/Utils/NavGroup";
 
 export default function DieselGenerators(props) {
-
-    const [showTable, setSHowTable] = useState(false);
-    const [arrow, setArrow] = useState(<BsFillCaretDownFill />)
-
-    const handleClick = () => {
-        setSHowTable(!showTable);
-        if (showTable) {
-            setArrow(<BsFillCaretDownFill />)
-        } else {
-            setArrow(<BsFillCaretUpFill />)
-        }
-    }
 
 
     return (
@@ -33,70 +21,67 @@ export default function DieselGenerators(props) {
             </div>
         </div>
 
-        <div className="accordionContainer" onClick={handleClick}>
-            <button class="accordion">
-                Carltons UK Silent Water Cooled Diesel Generator (3PHASE) 
-                <p>{arrow}</p>
-            </button>
-        </div>
-        
-        {showTable &&
-        <div className="table">
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Engine Capacity</th>
-                <th>Price</th>
-            </tr>
+        <NavGroup
+            label="Carltons UK Silent Water Cooled Diesel Generator"
+        >
+            <div className="table">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Engine Capacity</th>
+                    <th>Price</th>
+                </tr>
 
-            <tr>
-                <td>_CDG12.7S</td>
-                <td>12.7KVA</td>
-                <td>795,000</td>
-            </tr>
-            <tr>
-                <td>CDG18.7S</td>
-                <td>18.7KVA</td>
-                <td>888,000</td>
-            </tr>
-            <tr>
-                <td>CDG25S</td>
-                <td>25KVA</td>
-                <td>990,000</td>
-            </tr>
-            <tr>
-                <td>CDG37.5S</td>
-                <td>37.5KVS</td>
-                <td>1,170,000</td>
-            </tr>
-            <tr>
-                <td>CDG50S</td>
-                <td>62.5KVA</td>
-                <td>1,350,000</td>
-            </tr>
-            <tr>
-                <td>CDG62.5S</td>
-                <td>62.5KVA</td>
-                <td>1,480,000</td>                    
-            </tr>
-            <tr>
-                <td>CDG100S</td>
-                <td>100KVA</td>
-                <td>2,200,000</td>
-            </tr>
-            <tr>
-                <td>CDG150S</td>
-                <td>150KVA</td>
-                <td>2,900,000</td>
-            </tr>
-            <tr>
-                <td>CDG200S</td>
-                <td>150KVA</td>
-                <td>4,200,000</td>
-            </tr>
-        </table>
-    </div>
-        }
+                <tr>
+                    <td>_CDG12.7S</td>
+                    <td>12.7KVA</td>
+                    <td>795,000</td>
+                </tr>
+                <tr>
+                    <td>CDG18.7S</td>
+                    <td>18.7KVA</td>
+                    <td>888,000</td>
+                </tr>
+                <tr>
+                    <td>CDG25S</td>
+                    <td>25KVA</td>
+                    <td>990,000</td>
+                </tr>
+                <tr>
+                    <td>CDG37.5S</td>
+                    <td>37.5KVS</td>
+                    <td>1,170,000</td>
+                </tr>
+                <tr>
+                    <td>CDG50S</td>
+                    <td>62.5KVA</td>
+                    <td>1,350,000</td>
+                </tr>
+                <tr>
+                    <td>CDG62.5S</td>
+                    <td>62.5KVA</td>
+                    <td>1,480,000</td>                    
+                </tr>
+                <tr>
+                    <td>CDG100S</td>
+                    <td>100KVA</td>
+                    <td>2,200,000</td>
+                </tr>
+                <tr>
+                    <td>CDG150S</td>
+                    <td>150KVA</td>
+                    <td>2,900,000</td>
+                </tr>
+                <tr>
+                    <td>CDG200S</td>
+                    <td>150KVA</td>
+                    <td>4,200,000</td>
+                </tr>
+            </table>
+            </div>
+        </NavGroup>
+
+        
         
         <Footer />
         </>

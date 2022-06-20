@@ -1,7 +1,7 @@
 import BottomNav from "./BottomNav";
 import Navigation from "./Navigation";
 import {MdChevronRight} from 'react-icons/md'
-import BreadCrumbs from "./BreadCrumbs";
+import BreadCrumbs from "./Utils/BreadCrumbs";
 
 
 export default function CategoryItem(props){
