@@ -7,6 +7,8 @@ import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import Category from "./pages/Categories";
 import DieselGenerators from "./pages/Generators/Diesel";
+import GasolineEngines from "./pages/Engines/Gasoline";
+import Electric from "./pages/PWasher/Electric";
 
 export function App(){
     return (
@@ -36,7 +38,15 @@ export function App(){
                 <Route
                     path="/category/generators/dieselgenerators"
                     element={<DieselGenerators />}
-                />                
+                />  
+                <Route
+                    path="/category/engines/gasoline"
+                    element={<GasolineEngines/>}
+                />     
+                <Route 
+                    path="/category/pressurewasher/electric"
+                    element={<Electric />}
+                />         
             </Routes>
         </BrowserRouter>
         </>

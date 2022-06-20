@@ -62,17 +62,20 @@ export default function Category(props){
                 
             }
             {pathname === "engines" && 
+            <>
                 <CategoryItem
                     catName="Engines"
                     catImage={gasolineEngine}
                     catAltText="GL27 Gasoline Engine available for sale in kenya"
                     name1="GL27"
                     moreDescription1="Gasoline Engine"
+                    url="/category/engines/gasoline"
 
                     catImage2={carltonsuk}
                     catAltText2="carltons UK Gasoline engine for sale in Kenya"
                     name2="Electronic Ignition"
                     moreDescription2="Carltons UK Gasoline Engine 7.5 KVA C250"
+                    // url="/category/engines/gasoline"
 
                     catImage3={gas2}
                     catAltText3="carltons UK Gasoline engine for sale in Kenya"
@@ -84,8 +87,11 @@ export default function Category(props){
                     name4="Gasoline Engine For sale in Kenya"
                     moreDescription4="Carltons UK Gasoline Engine 7.5 KVA C250"
                 />
+                <Footer />
+                </>
             }
             {pathname === "gardentools" && 
+            <>
                 <CategoryItem
                     catName="Garden Tools"
                     catImage={brushCutter}
@@ -93,7 +99,59 @@ export default function Category(props){
                     catDescription="Grass Cutter"
                     name1="Brush Cutters 8 in 1"
                     moreDescription1="Model: NTB 8:1 Multi tool Honda 8 in 1 attachments. Best for grass cutting, hedge trimming and tree cutting."
-            />
+                />
+                <hr />
+                <h4 style={{"fontSize":"20px", "textDecoration":"underline", "textAlign":"center"}}>Gilardoni Italy Products</h4>
+                <h5 style={{"padding":"10px","marginLeft":"5em", "fontSize":"16px"}}>LAWN MOWER</h5>
+                <div className="table">
+                    <table>
+                        <tr>
+                            <th>Name/Model No.</th>
+                            <th></th>
+                            <th>Price in Ksh</th>
+                        </tr>
+                        <tr>
+                            <td>RTLM18</td>
+                            <td>18"</td>
+                            <td>48,500</td>
+                        </tr>
+                        <tr>
+                            <td>RTLM20</td>
+                            <td>20"</td>
+                            <td>54,000</td>
+                        </tr>
+                        <tr>
+                            <td>RTLM21</td>
+                            <td>21"</td>
+                            <td>6,000</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <hr />
+                <h5 style={{"padding":"10px","marginLeft":"5em", "fontSize":"16px"}}>GRASS CUTTER</h5>
+                <div className="table">
+                    <table>
+                        <tr>
+                            <th>Name/Model</th>
+                            <th>Type</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>RT437B</td>
+                            <td>4stroke</td>
+                            <td>25,000</td>
+                        </tr>
+                        <tr>
+                            <td>RTCG437</td>
+                            <td>4stroke</td>
+                            <td>24,500</td>
+                        </tr>
+                    </table>
+                </div>
+
+            <Footer />
+            </>
             }
             {pathname === "pressurewasher" && 
                 <>
@@ -114,9 +172,11 @@ export default function Category(props){
                     <p>4200psl</p>
                     <p>4200psl</p>
                 </div>
+                <Footer />
                 </>
             }
             {pathname === "farmtractors" && 
+            <>
                 <CategoryItem
                     catName="Farm Tractors"
                     catImage={tractor}
@@ -130,14 +190,38 @@ export default function Category(props){
                     name2="LevHart Farm tractors available for sale in Kenya"
                     moreDescription2=""
                 />
-            }
-            {pathname === "lawnmowers" && 
-                <CategoryItem
-                    catName="Lawn Mowers"
-                    catImage
-                    catAltText="Lawn Mowers for sale in kenya"
-                    catDescription="Farm Tractors"
-                />
+                <hr />
+                <h5 style={{"fontSize":"20px", "textAlign":"center", "textDecoration":"underline"}} >Farm Tractors available for sale in Kenya.</h5>
+                <div className="table">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>HP</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Stallions</td>
+                            <td>14HP</td>
+                            <td>SGE1500</td>
+                            <td>185,000</td>
+                        </tr>
+                        <tr>
+                            <td>Levhart</td>
+                            <td>14 HP</td>
+                            <td>LV1650E</td>
+                            <td>195,000</td>
+                        </tr>
+                        <tr>
+                            <td>Carltons</td>
+                            <td>10HP</td>
+                            <td>CUK1300D</td>
+                            <td>135,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <Footer />
+                </>
             }
         </div>
     )

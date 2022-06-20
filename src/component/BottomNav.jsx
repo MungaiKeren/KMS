@@ -36,14 +36,14 @@ export function BottomNav(){
                         </a>
                         <MdKeyboardArrowDown size={20} className="arrow-down" />
                         <div className="dropdown-content">
-                            <NavLink 
-                                url = "/category/gasolineEngines/"
+                            {/* <NavLink 
+                                url = "/category/engines/gasoline"
                                 link = "Gasoline Engines"
                             />
                             <NavLink 
                                 url ="/category/engines/"
                                 link = "Cummins"
-                            />
+                            /> */}
                         </div>                        
                     </div>
                 </div>
@@ -73,7 +73,7 @@ export function BottomNav(){
 
                 <div className="buttons">
                     <div className="content">
-                        <a href="/category/pressurewasher" className="text">
+                        <a href="/category/pressurewasher/" className="text">
                             Pressure Washer
                         </a>
                         <MdKeyboardArrowDown size={20} className="arrow-down" />
@@ -83,7 +83,7 @@ export function BottomNav(){
                                 link = "Petrol Pressure Washer (Tamashi Japan)"
                             />
                             <NavLink 
-                                url ="/category/"
+                                url ="/category/pressurewasher/electric"
                                 link = "Electric Pressure Washer (Cummins Available)"
                             />
                         </div>                        
