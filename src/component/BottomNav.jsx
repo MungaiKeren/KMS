@@ -1,5 +1,5 @@
 import React from "react";
-import {MdChevronLeft, MdKeyboardArrowDown} from 'react-icons/md';
+import { MdKeyboardArrowDown} from 'react-icons/md';
 import NavLink from "./NavLink";
 
 

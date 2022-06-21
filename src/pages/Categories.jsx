@@ -15,7 +15,6 @@ import gas3 from "../assets/Images/IMG-20220606-WA0002-removebg-preview (1).jpg"
 
 // pressure washer images
 import pwasher from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
-import pwasher2 from "../assets/Images/PetrolPressureWasher3200PSL.jpg"
 import ePwasher4200 from "../assets/Images/ElectricPressureWasher4200PSL.jpg"
 // import ePwasher3400 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"
 // import ePWasher2300 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"

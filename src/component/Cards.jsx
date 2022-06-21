@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 import img1 from "../assets/Images/new.jpg"
 import img2 from "../assets/Images/image.png"
 import img3 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"
 import img4 from "../assets/Images/ElectricPressureWasher4200PSL.jpg"
-import img5 from "../assets/Images/PetrolPressureWasher2600PSL.jpg"
-import img6 from "../assets/Images/PetrolPressureWasher3200PSL.jpg"
 import img7 from '../assets/Images/PowerItaliaRT16800ED.jpg'
 
 import { MdChevronLeft, MdChevronRight } from "react-icons/md"

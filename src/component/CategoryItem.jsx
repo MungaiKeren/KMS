@@ -1,6 +1,5 @@
 import BottomNav from "./BottomNav";
 import Navigation from "./Navigation";
-import {MdChevronRight} from 'react-icons/md'
 import BreadCrumbs from "./Utils/BreadCrumbs";
 
 
