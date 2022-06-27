@@ -79,7 +79,7 @@ export function BottomNav(){
                         <MdKeyboardArrowDown size={20} className="arrow-down" />
                         <div className="dropdown-content">
                             <NavLink 
-                                url = "/category/petrol pressure washer/"
+                                url = ""
                                 link = "Petrol Pressure Washer (Tamashi Japan)"
                             />
                             <NavLink 
