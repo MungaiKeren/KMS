@@ -1,20 +1,33 @@
+@import "../Styles/0_mediaquery.scss";
+@import "../Styles/1_variables.scss";
+
 .TopNav{
     background-color: white;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     .left{
-        margin-left: 3em;
+        padding-left: 3em;
     }
     .right{
-        margin: 0 4em 1em 0;
+        text-align: right;
+        padding: 0 4em 1em 0;
     }
     .contact-info{
         .fa-whatsapp-square{
             font-size: 28px;
             color: #5FD068;
+            text-align: center;
+        }
+    }
+    @include maxwidth(mobile){
+        display: block !important;
+        width: 100vw !important;
+        .left{
+            text-align: center;
+        }
+        .right{
             text-align: center;
         }
     }
