@@ -8,13 +8,17 @@
     grid-template-columns: repeat(2, 1fr);
 
     .left{
-        padding-left: 3em;
+        padding: 20px 0 0 3em;
+    }
+    hr{
+        display: none;
     }
     .right{
         text-align: right;
         padding: 0 4em 1em 0;
     }
     .contact-info{
+        padding-top: 20px;
         .fa-whatsapp-square{
             font-size: 28px;
             color: #5FD068;
@@ -26,9 +30,17 @@
         width: 100vw !important;
         .left{
             text-align: center;
+            padding: 0 !important;
+        }
+        hr{
+            display: block;
         }
         .right{
+            padding: 0 !important;
             text-align: center;
+            .contact-info{
+                padding-bottom: 20px;
+            }
         }
     }
 }
