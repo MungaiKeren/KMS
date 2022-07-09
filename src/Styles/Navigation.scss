@@ -128,6 +128,11 @@
         display: flex;
         flex-direction: row;
         gap: 1em;
+
+        @include maxwidth(mobile){
+          display: grid !important;
+          grid-template-columns: repeat(2, 1fr);
+        }
     }
     .content{
         border: 1px solid #D0C9C0;
@@ -145,6 +150,9 @@
           text-decoration: none;
           font-size: 17px;
           padding: 10px;
+        }
+        @include maxwidth(mobile){
+          width: 37vw !important;
         }
     }
     .content:hover{
