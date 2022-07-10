@@ -7,12 +7,14 @@ import Footer from "../../component/Footer";
 import NavGroup from "../../component/Utils/NavGroup";
 import PowerItalia from "../../assets/Images/PowerItaliaRT16800ED.jpg";
 import Gilardoni from "../../assets/Images/this-image.jpg";
+import TopNav from "../../component/TopNav";
 
 export default function DieselGenerators(props) {
 
 
     return (
         <>
+        <TopNav />
         <Navigation />
         <BottomNav />
         <BreadCrumbs catName="Diesel Generators"/> <br />

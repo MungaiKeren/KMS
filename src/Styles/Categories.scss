@@ -1,4 +1,5 @@
 @import "../Styles/1_variables";
+@import "../Styles/0_mediaquery";
 
 .breadcrumbs{
     padding: 2px;
@@ -15,6 +16,17 @@
     }
     #catname{
         cursor: pointer;
+    }
+
+    @include maxwidth(mobile){
+        width: 100%;
+        #span{
+            font-size: 30px;
+            padding: 0 !important;
+        }
+        p{
+            padding-left: 1em;
+        }
     }
 }
 .text-center{
@@ -49,9 +61,25 @@
             text-align: center;
             height: 30vh;
         }
+        @include maxwidth(mobile){
+            .imageOverlay{
+                width: 340px !important;
+                height: 15vh;
+                opacity: 1;
+            }
+        }
     }
     .imageContainer:hover .imageOverlay{
         opacity: 1;
-    }    
+    }   
+    @include maxwidth(mobile){
+        display: block !important;
+        .image{
+            width: 350px !important;
+        }
+        .imgOverlay{
+            width: 350px !important;
+        }
+    } 
 }
 

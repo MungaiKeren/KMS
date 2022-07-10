@@ -1,4 +1,5 @@
 import CategoryItem from "../component/CategoryItem";
+import TopNav from "../component/TopNav";
 import Footer from "../component/Footer";
 // generator images
 import PowerItalia from "../assets/Images/PowerItaliaRT16800ED.jpg"
@@ -40,6 +41,7 @@ export default function Category(props){
             {pathname === "generators" && 
                 (
                     <>
+                    <TopNav />
                     <CategoryItem
                         catName="Generators"
                         catImage={PowerItalia}
@@ -62,6 +64,7 @@ export default function Category(props){
             }
             {pathname === "engines" && 
             <>
+                <TopNav />
                 <CategoryItem
                     catName="Engines"
                     catImage={gasolineEngine}
@@ -91,6 +94,7 @@ export default function Category(props){
             }
             {pathname === "gardentools" && 
             <>
+                <TopNav />
                 <CategoryItem
                     catName="Garden Tools"
                     catImage={brushCutter}
@@ -154,6 +158,7 @@ export default function Category(props){
             }
             {pathname === "pressurewasher" && 
                 <>
+                <TopNav />
                 <CategoryItem
                     catName="Pressure Washer"
                     catImage={ePwasher4200}
@@ -176,6 +181,7 @@ export default function Category(props){
             }
             {pathname === "farmtractors" && 
             <>
+                <TopNav />
                 <CategoryItem
                     catName="Farm Tractors"
                     catImage={tractor}
