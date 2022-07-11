@@ -54,14 +54,14 @@
             background-size: cover !important;
             background-position: center !important;
             display: flex;
-            justify-content: flex-start;
+            justify-content: flex-end;
             align-items: flex-end;
         }
         .slider-card-title{
-            margin: 0 !important;
-            background: red;
+            margin: 0 10em !important;
+            background: $accent;
+            color: white;
             padding: 7px;
-            border: 1px solid greeen;
         }
     }
     
@@ -79,7 +79,7 @@
         th{
             padding: 12px 0 12px 6px;
             text-align: left;
-            background-color: #04AA6D;
+            background-color: $primary;
             color: white;
         }
         td, th{

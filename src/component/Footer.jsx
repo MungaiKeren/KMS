@@ -23,7 +23,7 @@ export function Footer(props){
                             window.location.href = "/services/"
                         }} >Services</li>
                         <li onClick={()=>{
-                            window.location.href = "/contact/"
+                            window.location.href = "/contactus/"
                         }} >Contact Us</li>
                     </ul>
                 </div>

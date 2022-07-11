@@ -13,7 +13,7 @@ export function Navigation(props){
                         <li><a href="/">Home</a></li>
                         <li><a href="/about/">About</a></li>
                         <li><a href="/services/">Services</a></li>
-                        <li><a href="/contacts/">Contact</a></li>
+                        <li><a href="/contactus/">Contact</a></li>
                     </ul>
                 </nav>
             </div>
