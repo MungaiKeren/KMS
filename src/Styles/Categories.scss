@@ -71,6 +71,10 @@
     }
     .imageContainer:hover .imageOverlay{
         opacity: 1;
+    }
+    .image{
+        width: 410px;
+        height: 400px;
     }   
     @include maxwidth(mobile){
         display: block !important;

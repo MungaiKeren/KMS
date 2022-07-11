@@ -25,6 +25,9 @@ import tractor from "../assets/Images/tractor.jpg"
 import tractor2 from "../assets/Images/tractor2.jpg"
 
 // lawn mower images
+import lawnMower from "../assets/Images/lawnMower.jpg";
+import mower from "../assets/Images/lawnmower.jpg";
+import LawnMower from "../assets/Images/LawnMower.jpg";
 
 // grass cutter images
 import brushCutter from "../assets/Images/brushcutter2.jpg";
@@ -102,6 +105,22 @@ export default function Category(props){
                     catDescription="Grass Cutter"
                     name1="Brush Cutters 8 in 1"
                     moreDescription1="Model: NTB 8:1 Multi tool Honda 8 in 1 attachments. Best for grass cutting, hedge trimming and tree cutting."
+
+                    catImage2={lawnMower}
+                    catAltText2="Lawn Mowers for sale in Kenya"
+                    name2="Lawn Mower"
+                    moreDescription2=""
+
+                    catImage3={mower}
+                    catAltText3="Lawn mowers for sale in Kenya"
+                    name3 = "Lawn mowers available for sale in Kenya"
+                    moreDescription3=""
+
+                    catImage4={LawnMower}
+                    catAltText4="Cheap affordable lawn mowers available for sale in Kenya"
+                    name4="Lawn Mower available for sale in Kenya"
+                    moreDescription4=""
+
                 />
                 <hr />
                 <h4 style={{"fontSize":"20px", "textDecoration":"underline", "textAlign":"center"}}>Gilardoni Italy Products</h4>

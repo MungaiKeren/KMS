@@ -1,13 +1,20 @@
 import React from "react";
+
+// components
 import Navigation from "../../component/Navigation";
 import BottomNav from "../../component/BottomNav";
 import BreadCrumbs from '../../component/Utils/BreadCrumbs';
-import carltons from "../../assets/Images/IMG-20220531-WA0009.jpg"
 import Footer from "../../component/Footer";
 import NavGroup from "../../component/Utils/NavGroup";
+import TopNav from "../../component/TopNav";
+
+// image imports
+import carltons from "../../assets/Images/IMG-20220531-WA0009.jpg";
 import PowerItalia from "../../assets/Images/PowerItaliaRT16800ED.jpg";
 import Gilardoni from "../../assets/Images/this-image.jpg";
-import TopNav from "../../component/TopNav";
+import silentGenerator from "../../assets/Images/SilentDieselGenerator.jpg";
+import gasoline from "../../assets/Images/PetrolGenerator.jpg";
+import waterPump from "../../assets/Images/Stallions14hpDieselWaterPump.jpg";
 
 export default function DieselGenerators(props) {
 
@@ -37,6 +44,24 @@ export default function DieselGenerators(props) {
                 <img src={Gilardoni} alt="" className="image"/>
                 <div className="imgOverlay">
                     <p>Gilardoni Italy</p>
+                </div>
+            </div>
+            <div className="imageContainer">
+                <img src={silentGenerator} height="400px" width="410px" alt="" className="image"/>
+                <div className="imgOverlay">
+                    <p>Silent Diesel Generator</p>
+                </div>
+            </div>
+            <div className="imageContainer">
+                <img src={gasoline} height="400px" width="410px" alt="" className="image"/>
+                <div className="imgOverlay">
+                    <p>Carltons UK C6500E Gasoline Generator</p>
+                </div>
+            </div>
+            <div className="imageContainer">
+                <img src={waterPump} height="400px" width="410px" alt="" className="image"/>
+                <div className="imgOverlay">
+                    <p>Stallions 14hp Diesel Water Pump</p>
                 </div>
             </div>
         </div>

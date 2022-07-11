@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import Category from "./pages/Categories";
 import DieselGenerators from "./pages/Generators/Diesel";
+import PetrolGenerators from "./pages/Generators/Petrol";
 import GasolineEngines from "./pages/Engines/Gasoline";
 import Electric from "./pages/PWasher/Electric";
 
@@ -38,6 +39,10 @@ export function App(){
                 <Route
                     path="/category/generators/dieselgenerators"
                     element={<DieselGenerators />}
+                />
+                <Route
+                    path="/category/generators/petrolgenerators"
+                    element={<PetrolGenerators />}
                 />  
                 <Route
                     path="/category/engines/gasoline"
