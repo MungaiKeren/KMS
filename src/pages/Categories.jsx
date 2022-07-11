@@ -26,8 +26,8 @@ import tractor2 from "../assets/Images/tractor2.jpg"
 
 // lawn mower images
 import lawnMower from "../assets/Images/lawnMower.jpg";
-import mower from "../assets/Images/lawnmower.jpg";
-import LawnMower from "../assets/Images/LawnMower.jpg";
+import mower from "../assets/Images/lawn-mower2.jpg";
+import LawnMower from "../assets/Images/Lawn_Mower1.jpg";
 
 // grass cutter images
 import brushCutter from "../assets/Images/brushcutter2.jpg";
