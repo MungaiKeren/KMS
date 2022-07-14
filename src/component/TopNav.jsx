@@ -1,6 +1,6 @@
 import React from "react";
-import logo from '../assets/Images/logo.png';
-import kms from "../assets/Images/kms.png";
+// import logo from '../assets/Images/logo.png';
+// import kms from "../assets/Images/kms.png";
 import kmsLogo from "../assets/Images/kmslogo.png"
 import {MdPhone, MdMailOutline} from "react-icons/md";
 

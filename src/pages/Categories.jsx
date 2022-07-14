@@ -1,3 +1,4 @@
+import React from "react";
 import CategoryItem from "../component/CategoryItem";
 import TopNav from "../component/TopNav";
 import Footer from "../component/Footer";
