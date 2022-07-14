@@ -126,9 +126,10 @@
     padding: 5px 2em 1em 2em;
     margin-top: 15px;
     .categories{
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        // flex-direction: row;
+        // gap: 1em;
 
         @include maxwidth(mobile){
           display: grid !important;
