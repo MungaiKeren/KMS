@@ -1,7 +1,8 @@
 import React from "react";
 import logo from '../assets/Images/logo.png';
 // This is the way to import an SVG file and then pass it as a props
-import { ReactComponent as CompanyIcon } from '../assets/Images/crown.svg';
+// import { ReactComponent as CompanyIcon } from '../assets/Images/crown.svg';
+import {BsHeadset} from 'react-icons/bs';
 import { WhatsAppWidget } from 'react-whatsapp-widget';
 import 'react-whatsapp-widget/dist/index.css';
 
@@ -44,7 +45,7 @@ export function Footer(props){
                 </div>
                 <div className="col4">
                     <div className="floatingIcon">
-                        <WhatsAppWidget CompanyIcon={CompanyIcon} companyName="Kenya Machinery Services" replyTimeText="We Reply Instantly!!!" sendButton="Let's Chat" open={true} phoneNumber="254706367448" />
+                        <WhatsAppWidget CompanyIcon={BsHeadset} companyName="Kenya Machinery Services" replyTimeText="We Reply Instantly!!!" sendButton="Let's Chat" open={true} phoneNumber="254706367448" />
                     </div>
                 </div>
             </div>
