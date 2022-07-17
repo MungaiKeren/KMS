@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-import img1 from "../assets/Images/new.jpg"
+import img1 from "../assets/Images/Lawn_Mower1.jpg"
 import img2 from "../assets/Images/image.png"
-import img3 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"
-import img4 from "../assets/Images/ElectricPressureWasher4200PSL.jpg"
-import img7 from '../assets/Images/PowerItaliaRT16800ED.jpg'
+import img3 from "../assets/Images/brushcutter2.jpg"
+import img4 from "../assets/Images/GasolineEngine.png"
+import img5 from "../assets/Images/C400EGasolineGenerator.jpg";
+import img6 from "../assets/Images/tractor.jpg";
+import img7 from '../assets/Images/PowerItaliaRT16800ED.jpg';
+import img8 from "../assets/Images/Stallions14hpDieselWaterPump.jpg"
 
 import { MdChevronLeft, MdChevronRight } from "react-icons/md"
 
@@ -12,16 +15,15 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md"
 export function Card(props){
 
     const slide = [
-        {img:img1,altText:"silent diesel generator price in kenya", label:"Silent Diesel Generator"},
-        {img:img2, altText:"", label:"Lawn Mower"},
-        {img:img3, altText:"power italia price in kenya", label:"Power Italia "},
-        {img:img4, altText:"", label:"pressure washer"},
-        // {img:img5, altText:"", label:""},
-        // {img:img6, altText:"", label:""},
+        {img:img5, altText:"Carltons UK 4000E Gasoline Generator available for sale in Kenya", label:"Carltons UK 4000E Gasoline Generator"},
+        {img:img6, altText:"", label:"Stallions Farm Tractor Available"},
+        {img:img1,altText:"silent diesel generator price in kenya", label:"Lawn Mower"},
+        {img:img2, altText:"GL 1200ED Silent Diesel Generator available for sale in Kenya", label:"GL 1200ED Silent Diesel Generator"},
+        {img:img3, altText:"power italia price in kenya", label:"Brush Cutters"},
+        {img:img4, altText:"", label:"GL275 Gasoline Engine"},
         {img:img7, altText:"", label:"Garden tools"},
-        // {img:img8, altText:"", label:""},
+        {img:img8, altText:"", label:"Stallions 14HP Diesel Water Pump"}
     ]
-    // const slides = [1,2,3,4,5,6,7,8];
 
     const slideLeft = () => {
         var slider = document.getElementById("slider");
@@ -31,6 +33,13 @@ export function Card(props){
         var slider = document.getElementById("slider");
         slider.scrollLeft = slider.scrollLeft - 500;
     }
+
+    useEffect(()=>{
+        setInterval(()=>{
+            slideLeft()
+        }, 4000);
+        return ;
+    }, []);
 
     return (
         <div className="main-slider-container">
