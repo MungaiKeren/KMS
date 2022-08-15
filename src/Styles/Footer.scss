@@ -3,7 +3,7 @@
 
 .footer{
     background-color: $primary;
-    height: 320px;
+    height: 350px;
     width: 100%;
     .row{
         padding: 2em;
@@ -47,15 +47,15 @@
                 color: #F2EBE9;
             }
             .fa-whatsapp-square{
-                color: $primary;
+                color: #fff;
                 font-size: 46px;
             }
             .fa-facebook-square{
-                color: #F2EBE9;
+                color: #fff;
                 font-size: 46px;
             }
             .fa-instagram-square{
-                color: #ded1c1;
+                color: #fff;
                 font-size: 46px;
             }
         }
@@ -90,9 +90,13 @@
                 margin: 0 !important;
             }
         }
+        hr{
+            opacity: 0;
+        }
         .bottom{
+            padding: 20px;
             p{
-                padding: 1em;
+                padding: 10px;
             }
         }
     }

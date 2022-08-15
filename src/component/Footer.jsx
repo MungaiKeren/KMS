@@ -45,7 +45,7 @@ export function Footer(props){
                 </div>
                 <div className="col4">
                     <div className="floatingIcon">
-                        <WhatsAppWidget CompanyIcon={BsHeadset} companyName="Kenya Machinery Services" replyTimeText="We Reply Instantly!!!" sendButton="Let's Chat" open={true} phoneNumber="254706367448" />
+                        <WhatsAppWidget CompanyIcon={BsHeadset} companyName="Kenya Machinery Services" replyTimeText="We Reply Instantly!!!" sendButton="Let's Chat" open={false} phoneNumber="254706367448" />
                     </div>
                 </div>
             </div>
