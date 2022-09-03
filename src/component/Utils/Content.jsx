@@ -2,7 +2,7 @@ import React from "react"
 
 export default function Content(props) {
     return (
-        <div className="content">
+        <div className="contents">
             <div className="title">
                 <h4>{props.title}</h4>
             </div>

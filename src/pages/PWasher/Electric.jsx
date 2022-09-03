@@ -59,7 +59,7 @@ export default function ElectricPWasher(props){
             p3="We are the leading suppliers of the best electric and petrol powered car washing machines."
             p4="Call or  send WhatsApp  message to talk to our experts to guide you on your purchase."
             listTitle="Advantages of car wash- High pressure washing machine."
-            l1="accelerates the cleaning process."
+            l1="Accelerates the cleaning process."
             l2="More effective breaking up of lubricant residues."
             l3="Labour cost savings."
             l4="Shorter drying time."
