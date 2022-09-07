@@ -41,9 +41,13 @@ export default function Category(props){
     // get url
     const pathname = window.location.pathname.split("/")[2];
 
+    // generators descriptions
     const gen_desc = ["We all need power supply for various needs in our daily life. Getting good and reliable power is important. Thats why we do not take to chances when it comes to giving the best engines in the world.", "We have power generators with petrol engines and Deisel engines all suitable for a wide range of use. From a small house hold appliances to industrial and large scale use.", "Our leading brand with cummins engines is Carltons-UK,followed in consistently good performance by Power- Italia, Gilardoni, Hisaki, Aico Milano etc.    Get 12+2 months  warranty on any of our petrol powered power italia generators", "Get easy access  to spares and on time servicing of your generator purchased from us by our well trained experts.", "We also facilitate delivery at a small cost for all generator size. With Nairobi same day delivery and outside Nairobi and kenya, delivery is from 24hrs upon full payment."]
     const generatorsList = ["Relatively low maintenance.","Long durability","Safe storage","High power output","More rugged and reliable","Easy access to fuel."]
 
+    // pressure washer
+    const pressure_desc = ["The best machine keeps you in business, when it comes to car wash business. It is one of the fastest growing business with over 10,000 single business set in kenya alone.", "It has been one of the easiest employment for youths in kenya. From a small and not so busy car wash to the large and busiest,  you need the write machine.","We are the leading suppliers of the best electric and petrol powered car washing machines.", "Call or  send WhatsApp  message to talk to our experts to guide you on your purchase."]
+    const pressure_lists = ["Better option where alternative or back-up power will be used infrequently or temporarily.", "Petrol generators are less expensive","More effective breaking up of lubricant residues.","Labour cost savings.","Shorter drying time.","Use less cleaning agent.","Germ-reducing effect.","Protection of delicate surface.", " Produce less harmful carbon dioxide fumes."]
 
     return (
         <div>
@@ -206,6 +210,12 @@ export default function Category(props){
                     <p>4200psl</p>
                     <p>4200psl</p>
                 </div>
+                <Content 
+                    title="Pressure Washer."
+                    p={pressure_desc}
+                    listTitle="The main advantages Petrol generators are;"
+                    lists={pressure_lists}
+                />
                 <Footer />
                 </>
             }
