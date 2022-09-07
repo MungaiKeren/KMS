@@ -2,6 +2,8 @@ import React from "react";
 import CategoryItem from "../component/CategoryItem";
 import TopNav from "../component/TopNav";
 import Footer from "../component/Footer";
+import Content from "../component/Utils/Content";
+
 // generator images
 import PowerItalia from "../assets/Images/PowerItaliaRT16800ED.jpg"
 import Gilardoni from "../assets/Images/this-image.jpg"
@@ -39,6 +41,9 @@ export default function Category(props){
     // get url
     const pathname = window.location.pathname.split("/")[2];
 
+    const gen_desc = ["We all need power supply for various needs in our daily life. Getting good and reliable power is important. Thats why we do not take to chances when it comes to giving the best engines in the world.", "We have power generators with petrol engines and Deisel engines all suitable for a wide range of use. From a small house hold appliances to industrial and large scale use.", "Our leading brand with cummins engines is Carltons-UK,followed in consistently good performance by Power- Italia, Gilardoni, Hisaki, Aico Milano etc.    Get 12+2 months  warranty on any of our petrol powered power italia generators", "Get easy access  to spares and on time servicing of your generator purchased from us by our well trained experts.", "We also facilitate delivery at a small cost for all generator size. With Nairobi same day delivery and outside Nairobi and kenya, delivery is from 24hrs upon full payment."]
+    const generatorsList = ["Relatively low maintenance.","Long durability","Safe storage","High power output","More rugged and reliable","Easy access to fuel."]
+
 
     return (
         <div>
@@ -60,6 +65,11 @@ export default function Category(props){
                         catImage3={CarltonsUK}
                         catAltText3="100KVA Carltons-UK (Cummins Engine)available for sale in kenya"
                         name3="100KVA Carltons-UK(Cummins Engine) Diesel Generator (3PHASE)"
+                    />
+                    <Content 
+                        title="Generators."
+                        p={gen_desc}
+                        lists={generatorsList}
                     />
                     <Footer />
                    </>
