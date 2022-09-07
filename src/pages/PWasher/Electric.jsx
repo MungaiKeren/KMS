@@ -8,6 +8,10 @@ import Content from "../../component/Utils/Content";
 
 
 export default function ElectricPWasher(props){
+
+    const p = ["The best machine keeps you in business, when it comes to car wash business. It is one of the fastest growing business with over 10,000 single business set in kenya alone.", "It has been one of the easiest employment for youths in kenya. From a small and not so busy car wash to the large and busiest,  you need the write machine.","We are the leading suppliers of the best electric and petrol powered car washing machines.", "Call or  send WhatsApp  message to talk to our experts to guide you on your purchase."]
+
+    const lists = ["Accelerates the cleaning process.","More effective breaking up of lubricant residues.","Labour cost savings.","Shorter drying time.","Use less cleaning agent.","Germ-reducing effect.","Protection of delicate surface."]
     return (
         <>
         <TopNav />
@@ -53,19 +57,9 @@ export default function ElectricPWasher(props){
 
         <Content 
             title="Car washing machines."
-            p1="The best machine keeps you in business, when it comes to car wash business.
-            It is one of the fastest growing business with over 10,000 single business set in kenya alone."
-            p2="It has been one of the easiest employment for youths in kenya. From a small and not so busy car wash to the large and busiest,  you need the write machine."
-            p3="We are the leading suppliers of the best electric and petrol powered car washing machines."
-            p4="Call or  send WhatsApp  message to talk to our experts to guide you on your purchase."
+            p={p}
             listTitle="Advantages of car wash- High pressure washing machine."
-            l1="Accelerates the cleaning process."
-            l2="More effective breaking up of lubricant residues."
-            l3="Labour cost savings."
-            l4="Shorter drying time."
-            l5="Use less cleaning agent."
-            l6="Germ-reducing effect."
-            l7="Protection of delicate surface."
+            lists = {lists}
         />
         <Footer />
         </>
