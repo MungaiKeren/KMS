@@ -10,6 +10,7 @@ import DieselGenerators from "./pages/Generators/Diesel";
 import PetrolGenerators from "./pages/Generators/Petrol";
 import GasolineEngines from "./pages/Engines/Gasoline";
 import Electric from "./pages/PWasher/Electric";
+import NotFound from "./pages/NotFound";
 
 export function App(){
     return (
@@ -52,6 +53,10 @@ export function App(){
                     path="/category/pressurewasher/electric"
                     element={<Electric />}
                 />         
+                <Route 
+                    path="*"
+                    element={<NotFound />}
+                />
             </Routes>
         </BrowserRouter>
         </>
