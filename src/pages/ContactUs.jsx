@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { send } from 'emailjs-com';
+import TopNav from "../component/TopNav";
 import Navigation from "../component/Navigation";
 import Footer from "../component/Footer";
 
@@ -34,6 +35,7 @@ export function ContactUs(props){
 
     return (
         <>
+        <TopNav />
         <Navigation />
         <div className="contact">
             <h1>Reach out to us Now</h1>
