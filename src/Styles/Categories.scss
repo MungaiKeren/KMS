@@ -71,6 +71,8 @@
     }
     .imageContainer:hover .imageOverlay{
         opacity: 1;
+        background: linear-gradient(to bottom, transparent, rgba($color: $accent, $alpha: 1) 70%);
+
     }
     .image{
         width: 410px;
