@@ -41,11 +41,37 @@ export default function Category(props){
     // get url
     const pathname = window.location.pathname.split("/")[2];
 
+    const generatorItems = [
+        {img: PowerItalia, alt: "Diesel Engine for sale in kenya", name: "Power Italia Generator", description: "Power Italia Silent Air Cooled Diesel Generator (single phase)"},
+        {img:Gilardoni, alt:"Gilardoni Italy Silent Diesel Generators available for sale in kenya", name: "Gilardoni Italy Silent Diesel Generators (GL1200ED)", description: ""},
+        {img: CarltonsUK, alt:"100KVA Carltons-UK (Cummins Engine)available for sale in kenya", name: "100KVA Carltons-UK (Cummins Engine)", description: ""}
+
+    ]
+
+    const engineItems=[
+        {img:gasolineEngine, alt:"GL27 Gasoline Engine available for sale in kenya", name: "GL27", description: "", url:"/category/engines/gasoline"},
+        {img: carltonsuk, alt: "carltons UK Gasoline engine for sale in Kenya", name: "Electronic Ignition", description:"Carltons UK Gasoline Engine 7.5 KVA C250"},
+        {img: gas2, alt: "carltons UK Gasoline engine for sale in Kenya", name: "Gasoline Engine For sale in", description: "Carltons UK Gasoline Engine 7.5 KVA C250"},
+        {img: gas3,alt:"carltons UK Gasoline engine for sale in Kenya", name: "Gasoline Engine", description: "Carltons UK Gasoline Engine 7.5 KVA C250"},
+    ]
+
+    const gardenToolsItems = [
+        {img:lawnMower, alt:"Lawn Mowers for sale in Kenya",name:"Lawn Mower", description:"Lawn Mower"},
+        {img:brushCutter, alt:"Brush Cutters for sale in Kenya",name:"Brush Cutters 8 in 1", description: "Model: NTB 8:1 Multi tool Honda 8 in 1 attachments. Best for grass cutting, hedge trimming and tree cutting."},
+        {img: mower, alt:"Lawn Mower for sale in Nairobi",name:"Lawn Mower", description:"Lawn Mower"},
+        {img: LawnMower, alt:"lawn mowers availble for sale",name:"Lawn Mower",description:"Lawn Mower"},
+    ]
+
+    const pwasherItems = [
+        {img: pwasher, alt:"Electric Pressure Washer available for sale in kenya", name: "Electric Pressure Washer", description: "4200PSL"},
+        {img: ePwasher4200, alt: "Petrol Pressure washer availble for sale in Kenya", name: "Gasoline High PressureWasher", description: "4200PSL"}
+    ]
+
     // generators descriptions
     const gen_desc = ["We all need power supply for various needs in our daily life. Getting good and reliable power is important. Thats why we do not take to chances when it comes to giving the best engines in the world.", "We have power generators with petrol engines and Deisel engines all suitable for a wide range of use. From a small house hold appliances to industrial and large scale use.", "Our leading brand with cummins engines is Carltons-UK,followed in consistently good performance by Power- Italia, Gilardoni, Hisaki, Aico Milano etc.    Get 12+2 months  warranty on any of our petrol powered power italia generators", "Get easy access  to spares and on time servicing of your generator purchased from us by our well trained experts.", "We also facilitate delivery at a small cost for all generator size. With Nairobi same day delivery and outside Nairobi and kenya, delivery is from 24hrs upon full payment."]
     const generatorsList = ["Relatively low maintenance.","Long durability","Safe storage","High power output","More rugged and reliable","Easy access to fuel."]
 
-    // pressure washer
+    // pressure washer descriptions
     const pressure_desc = ["The best machine keeps you in business, when it comes to car wash business. It is one of the fastest growing business with over 10,000 single business set in kenya alone.", "It has been one of the easiest employment for youths in kenya. From a small and not so busy car wash to the large and busiest,  you need the write machine.","We are the leading suppliers of the best electric and petrol powered car washing machines.", "Call or  send WhatsApp  message to talk to our experts to guide you on your purchase."]
     const pressure_lists = ["Better option where alternative or back-up power will be used infrequently or temporarily.", "Petrol generators are less expensive","More effective breaking up of lubricant residues.","Labour cost savings.","Shorter drying time.","Use less cleaning agent.","Germ-reducing effect.","Protection of delicate surface.", " Produce less harmful carbon dioxide fumes."]
 
@@ -55,20 +81,9 @@ export default function Category(props){
                 (
                     <>
                     <TopNav />
-                    <CategoryItem
+                    <CategoryItem 
                         catName="Generators"
-                        catImage={PowerItalia}
-                        catAltText="Diesel Engine for sale in kenya"
-                        catDescription="This are generators"
-                        name1="Power Italia Silent Air Cooled Diesel Generator (single phase)"
-
-                        catImage2 = {Gilardoni}
-                        catAltText2="Gilardoni Italy Silent Diesel Generators available for sale in kenya"
-                        name2="Gilardoni Italy Silent Diesel Generators (GL1200ED)"
-
-                        catImage3={CarltonsUK}
-                        catAltText3="100KVA Carltons-UK (Cummins Engine)available for sale in kenya"
-                        name3="100KVA Carltons-UK(Cummins Engine) Diesel Generator (3PHASE)"
+                        items={generatorItems}
                     />
                     <Content 
                         title="Generators."
@@ -83,29 +98,9 @@ export default function Category(props){
             {pathname === "engines" && 
             <>
                 <TopNav />
-                <CategoryItem
+                <CategoryItem 
                     catName="Engines"
-                    catImage={gasolineEngine}
-                    catAltText="GL27 Gasoline Engine available for sale in kenya"
-                    name1="GL27"
-                    moreDescription1="Gasoline Engine"
-                    url="/category/engines/gasoline"
-
-                    catImage2={carltonsuk}
-                    catAltText2="carltons UK Gasoline engine for sale in Kenya"
-                    name2="Electronic Ignition"
-                    moreDescription2="Carltons UK Gasoline Engine 7.5 KVA C250"
-                    // url="/category/engines/gasoline"
-
-                    catImage3={gas2}
-                    catAltText3="carltons UK Gasoline engine for sale in Kenya"
-                    name3="Gasoline Engine For sale in Kenya"
-                    moreDescription3="Carltons UK Gasoline Engine 7.5 KVA C250"
-
-                    catImage4={gas3}
-                    catAltText4="carltons UK Gasoline engine for sale in Kenya"
-                    name4="Gasoline Engine For sale in Kenya"
-                    moreDescription4="Carltons UK Gasoline Engine 7.5 KVA C250"
+                    items={engineItems}
                 />
                 <Footer />
                 </>
@@ -115,27 +110,7 @@ export default function Category(props){
                 <TopNav />
                 <CategoryItem
                     catName="Garden Tools"
-                    catImage={brushCutter}
-                    catAltText="Brush Cutters for sale in kenya"
-                    catDescription="Grass Cutter"
-                    name1="Brush Cutters 8 in 1"
-                    moreDescription1="Model: NTB 8:1 Multi tool Honda 8 in 1 attachments. Best for grass cutting, hedge trimming and tree cutting."
-
-                    catImage2={lawnMower}
-                    catAltText2="Lawn Mowers for sale in Kenya"
-                    name2="Lawn Mower"
-                    moreDescription2=""
-
-                    catImage3={mower}
-                    catAltText3="Lawn mowers for sale in Kenya"
-                    name3 = "Lawn mowers available for sale in Kenya"
-                    moreDescription3=""
-
-                    catImage4={LawnMower}
-                    catAltText4="Cheap affordable lawn mowers available for sale in Kenya"
-                    name4="Lawn Mower available for sale in Kenya"
-                    moreDescription4=""
-
+                    items={gardenToolsItems}
                 />
                 <hr />
                 <h4 style={{"fontSize":"20px", "textDecoration":"underline", "textAlign":"center"}}>Gilardoni Italy Products</h4>
@@ -195,20 +170,12 @@ export default function Category(props){
                 <TopNav />
                 <CategoryItem
                     catName="Pressure Washer"
-                    catImage={ePwasher4200}
-                    catAltText="Petrol Pressure Washer for sale in kenya"
-                    name1="Gasoline High PressureWasher"
-                    moreDescription1="4200 PSL"
-
-                    catImage2={pwasher}
-                    catAltText2="Electric Pressure Washer available for sale in kenya"
-                    name2="Electric Pressure Washer"
-                    moreDescription2="4200PSL"
+                    items={pwasherItems}
                 />
-                <div className="variations">
-                    <p>2600ps</p>
-                    <p>4200psl</p>
-                    <p>4200psl</p>
+                <div className="variations" style={{"textAlign": "center"}}>
+                    <h3>Variations</h3>
+                    <p>2600PSL</p>
+                    <p>4200PSL</p>
                 </div>
                 <Content 
                     title="Pressure Washer."

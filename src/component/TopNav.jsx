@@ -18,7 +18,7 @@ export function TopNav(){
                         <MdPhone size={20} /> &nbsp; 0706 367 488
                     </span> <br />
                     <MdMailOutline size={20}/> &nbsp;
-                   <span className="mailInfo">info@kenyamachineryservices</span>
+                   <span className="mailInfo">info@kenyamachineryservices.co.ke</span>
                 </div>
             </div>
         </div>
