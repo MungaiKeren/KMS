@@ -16,13 +16,13 @@ export function Card(props){
 
     const slide = [
         {img:img5, altText:"Carltons UK 4000E Gasoline Generator available for sale in Kenya", label:"Carltons UK 4000E Gasoline Generator"},
-        {img:img6, altText:"", label:"Stallions Farm Tractor Available"},
+        {img:img6, altText:"stallions farm tractor available for sale in kenya", label:"Stallions Farm Tractor Available"},
         {img:img1,altText:"silent diesel generator price in kenya", label:"Lawn Mower"},
         {img:img2, altText:"GL 1200ED Silent Diesel Generator available for sale in Kenya", label:"GL 1200ED Silent Diesel Generator"},
         {img:img3, altText:"power italia price in kenya", label:"Brush Cutters"},
-        {img:img4, altText:"", label:"GL275 Gasoline Engine"},
-        {img:img7, altText:"", label:"Garden tools"},
-        {img:img8, altText:"", label:"Stallions 14HP Diesel Water Pump"}
+        {img:img4, altText:"gasoline engine for sale in kenya", label:"GL275 Gasoline Engine"},
+        {img:img7, altText:"power italia generator for sale in Kenya", label:"Power Italia Generator"},
+        {img:img8, altText:"stallions 14HP diesel water pump availableforsalein kenya", label:"Stallions 14HP Diesel Water Pump"}
     ]
 
     const slideLeft = () => {

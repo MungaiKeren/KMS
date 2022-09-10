@@ -29,8 +29,10 @@ import tractor2 from "../assets/Images/tractor2.jpg"
 
 // lawn mower images
 import lawnMower from "../assets/Images/lawnMower.jpg";
+import manyLM from "../assets/Images/manyLawnMowers.jpg"
 import mower from "../assets/Images/lawn-mower2.jpg";
 import LawnMower from "../assets/Images/Lawn_Mower1.jpg";
+import newLM from "../assets/Images/new_lawnmower.jpg"
 
 // grass cutter images
 import brushCutter from "../assets/Images/brushcutter2.jpg";
@@ -56,15 +58,17 @@ export default function Category(props){
     ]
 
     const gardenToolsItems = [
-        {img:lawnMower, alt:"Lawn Mowers for sale in Kenya",name:"Lawn Mower", description:"Lawn Mower"},
-        {img:brushCutter, alt:"Brush Cutters for sale in Kenya",name:"Brush Cutters 8 in 1", description: "Model: NTB 8:1 Multi tool Honda 8 in 1 attachments. Best for grass cutting, hedge trimming and tree cutting."},
+        {img: lawnMower, alt:"Lawn Mowers for sale in Kenya",name:"Lawn Mower", description:"Lawn Mower"},
+        {img: brushCutter, alt:"Brush Cutters for sale in Kenya",name:"Brush Cutters 8 in 1", description: "Model: NTB 8:1 Multi tool Honda 8 in 1 attachments. Best for grass cutting, hedge trimming and tree cutting."},
         {img: mower, alt:"Lawn Mower for sale in Nairobi",name:"Lawn Mower", description:"Lawn Mower"},
         {img: LawnMower, alt:"lawn mowers availble for sale",name:"Lawn Mower",description:"Lawn Mower"},
+        {img: manyLM, alt: "Lawn mowers available for sale in kenya", name: "", description: ""},
+        {img: newLM, alt:"Lawm mower", name: "", description: ""}
     ]
 
     const pwasherItems = [
-        {img: pwasher, alt:"Electric Pressure Washer available for sale in kenya", name: "Electric Pressure Washer", description: "4200PSL"},
-        {img: ePwasher4200, alt: "Petrol Pressure washer availble for sale in Kenya", name: "Gasoline High PressureWasher", description: "4200PSL"}
+        {img: pwasher, alt:"Electric Pressure Washer available for sale in kenya", name: "Electric Pressure Washer", description: "4200PSI"},
+        {img: ePwasher4200, alt: "Petrol Pressure washer availble for sale in Kenya", name: "Gasoline High PressureWasher", description: "4200PSI"}
     ]
 
     // generators descriptions
@@ -174,8 +178,8 @@ export default function Category(props){
                 />
                 <div className="variations" style={{"textAlign": "center"}}>
                     <h3>Variations</h3>
-                    <p>2600PSL</p>
-                    <p>4200PSL</p>
+                    <p>2600PSI</p>
+                    <p>4200PSI</p>
                 </div>
                 <Content 
                     title="Pressure Washer."
