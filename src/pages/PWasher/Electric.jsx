@@ -52,6 +52,31 @@ export default function ElectricPWasher(props){
                     <td>4200psi</td>
                     <td>80,000</td>
                 </tr>
+                <tr>
+                    <td>Pionner</td>
+                    <td>3450psq</td>
+                    <td>82,000</td>
+                </tr>
+                <tr>
+                    <td>Pionner</td>
+                    <td>2700psi</td>
+                    <td>65,000</td>
+                </tr>
+                <tr>
+                    <td>Pionner</td>
+                    <td>2000psi</td>
+                    <td>48,000</td>
+                </tr>
+                <tr>
+                    <td>Karcher</td>
+                    <td>HD5</td>
+                    <td>130,000</td>
+                </tr>
+                <tr>
+                    <td>Karcher</td>
+                    <td>HD6</td>
+                    <td>165,000</td>
+                </tr>
             </table>
         </div>
 
