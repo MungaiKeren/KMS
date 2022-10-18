@@ -37,7 +37,7 @@ export function Footer(props){
                     <p>Bamburi Road off enterprise road.</p>
                     <p>
                         <i className="fas fa-phone"></i> &nbsp;
-                        0706 367 488
+                        0706 367 448
                     </p>
                     <i className="fab fa-whatsapp-square"></i> &nbsp;
                     <i className="fab fa-facebook-square"></i> &nbsp;
