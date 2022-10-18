@@ -8,6 +8,7 @@ import img5 from "../assets/Images/C400EGasolineGenerator.jpg";
 import img6 from "../assets/Images/tractor.jpg";
 import img7 from '../assets/Images/PowerItaliaRT16800ED.jpg';
 import img8 from "../assets/Images/Stallions14hpDieselWaterPump.jpg"
+import img9 from "../assets/Images/MasseyFurgerson.jpg"
 
 import { MdChevronLeft, MdChevronRight } from "react-icons/md"
 
@@ -22,7 +23,8 @@ export function Card(props){
         {img:img3, altText:"power italia price in kenya", label:"Brush Cutters"},
         {img:img4, altText:"gasoline engine for sale in kenya", label:"GL275 Gasoline Engine"},
         {img:img7, altText:"power italia generator for sale in Kenya", label:"Power Italia Generator"},
-        {img:img8, altText:"stallions 14HP diesel water pump availableforsalein kenya", label:"Stallions 14HP Diesel Water Pump"}
+        {img:img8, altText:"stallions 14HP diesel water pump availableforsalein kenya", label:"Stallions 14HP Diesel Water Pump"},
+        {img:img9, altText:"Massey Furgerson Farm Tractor availablefor sale in kenya", label:"Massey Furgerson"}
     ]
 
     const slideLeft = () => {

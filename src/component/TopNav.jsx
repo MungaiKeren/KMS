@@ -15,7 +15,7 @@ export function TopNav(){
             <div className="right">
                 <div className="contact-info">
                     <span>
-                        <MdPhone size={20} /> &nbsp; 0706 367 488
+                        <MdPhone size={20} /> &nbsp; 0706 367 448
                     </span> <br />
                     <MdMailOutline size={20}/> &nbsp;
                    <span className="mailInfo">info@kenyamachineryservices.co.ke</span>
