@@ -139,7 +139,7 @@ export default function Category(props){
                         <tr>
                             <td>RTLM21</td>
                             <td>21"</td>
-                            <td>6,000</td>
+                            <td>60,000</td>
                         </tr>
                     </table>
                 </div>

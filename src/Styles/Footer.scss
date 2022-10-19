@@ -14,7 +14,7 @@
             font-size: 20px;
         }
         .col2{
-            margin: 0 0 0 100px;
+            margin: 0 0 0 75px;
             h4{
                 text-decoration: underline;
                 text-align: center;
@@ -35,6 +35,26 @@
                     color: $accent;
                 }
             }            
+        }
+        .col22{
+            margin: 0 0 0 75px;
+            h4{
+                text-decoration: underline;
+            }
+            ul{
+                li{
+                    text-decoration: none;
+                    color: #F2EBE9;
+                    display: block;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    font-size: 20px;
+                }
+                li:hover{
+                    text-decoration: underline;
+                    color: $accent;
+                }
+            }
         }
         .col3{
             margin: 0 0 0 100px;
@@ -57,6 +77,19 @@
                 color: #fff;
                 font-size: 46px;
             }
+            ul{
+                li{
+                    text-decoration: none;
+                    color: #F2EBE9;
+                    display: block;
+                    cursor: pointer;
+                    font-size: 20px;
+                }
+                li:hover{
+                    text-decoration: underline;
+                    color: $accent;
+                }
+            }  
         }
         .floatingIcon{
             border: 1px solid #F2EBE9;

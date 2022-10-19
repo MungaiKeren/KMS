@@ -32,6 +32,23 @@ export function Footer(props){
                         }} >Contact Us</li>
                     </ul>
                 </div>
+                <div className="col22">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li onClick={()=>{
+                            window.location.href="/category/generators"
+                        }}>Generators</li>
+                        <li onClick={()=>{
+                            window.location.href = "/category/gardentools/"
+                        }}>Garden Tools</li>
+                        <li onClick={()=>{
+                            window.location.href = "/category/engines/"
+                        }} >Engines</li>
+                        <li onClick={()=>{
+                            window.location.href = "/category/farmtractors/"
+                        }} >Farm Tractors</li>
+                    </ul>
+                </div>
                 <div className="col3">
                     <h4>Connect with us</h4>
                     <p>Bamburi Road off enterprise road.</p>
