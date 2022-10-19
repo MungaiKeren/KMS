@@ -20,12 +20,14 @@
 
     @include maxwidth(mobile){
         width: 100%;
+        background: none !important;
         #span{
             font-size: 30px;
             padding: 0 !important;
         }
         p{
             padding-left: 1em;
+            color: grey;
         }
     }
 }

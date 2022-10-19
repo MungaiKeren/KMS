@@ -38,10 +38,10 @@ export default function PhoneNav(props){
                 {subMenuG&&
                         <>
                         <p onClick={()=>{
-                    window.location.href ="category/generators/dieselgenerators"
+                    window.location.href ="/category/generators/dieselgenerators"
                 }}>Diesel Generators</p>
                         <p onClick={()=>{
-                    window.location.href ="category/generators/petrolgenerators"
+                    window.location.href ="/category/generators/petrolgenerators"
                 }}>Petrol Generators</p>
                         </>
                     }
@@ -94,7 +94,7 @@ export default function PhoneNav(props){
                     window.location.href = "/category/pressurewasher/electric"
                 }}>Petrol PW (Tamashi japan)</p>
                 <p onClick={()=>{
-                    window.location.href="category/pressurewasher/electric"
+                    window.location.href="/category/pressurewasher/electric"
                 }}>Electric PW (Cummins)</p>
                 </>}
                 <li className="hasDD">

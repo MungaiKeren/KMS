@@ -7,6 +7,7 @@ import BreadCrumbs from '../../component/Utils/BreadCrumbs';
 import Footer from "../../component/Footer";
 import NavGroup from "../../component/Utils/NavGroup";
 import TopNav from "../../component/TopNav";
+import PhoneNav from "../../component/PhoneNav";
 
 // image imports
 import gasoline from "../../assets/Images/PetrolGenerator.jpg";
@@ -19,8 +20,13 @@ export default function PetrolGenerators(props) {
     return (
         <>
         <TopNav />
-        <Navigation />
+        <div className="hide-on-phone">
+        <Navigation />        
         <BottomNav />
+        </div>      
+        <div className="display-on-phone">
+        <PhoneNav />    
+        </div>
         <BreadCrumbs catName="Petrol Generators"/> <br />
 
         {/* image displays */}

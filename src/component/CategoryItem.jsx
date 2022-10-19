@@ -1,6 +1,7 @@
 import React from "react";
 import BottomNav from "./BottomNav";
 import Navigation from "./Navigation";
+import PhoneNav from "./PhoneNav";
 import BreadCrumbs from "./Utils/BreadCrumbs";
 
 
@@ -11,8 +12,13 @@ export default function CategoryItem(props){
 
     return (
         <>
-        <Navigation />
+        <div className="hide-on-phone">
+        <Navigation />        
         <BottomNav />
+        </div>      
+        <div className="display-on-phone">
+        <PhoneNav />    
+        </div>
         <hr />
         <BreadCrumbs 
             catName={props.catName}

@@ -3,7 +3,7 @@ import {BsFillCaretDownFill, BsFillCaretUpFill} from "react-icons/bs";
 
 export default function NavGroup(props){
 
-    const [showTable, setSHowTable] = useState(false);
+    const [showTable, setSHowTable] = useState(true);
     const [arrow, setArrow] = useState(<BsFillCaretDownFill />)
 
     const toggle = () => {

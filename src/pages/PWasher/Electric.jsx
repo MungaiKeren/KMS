@@ -5,6 +5,7 @@ import Navigation from "../../component/Navigation";
 import TopNav from "../../component/TopNav";
 import BreadCrumbs from "../../component/Utils/BreadCrumbs";
 import Content from "../../component/Utils/Content";
+import PhoneNav from "../../component/PhoneNav";
 
 
 export default function ElectricPWasher(props){
@@ -15,8 +16,13 @@ export default function ElectricPWasher(props){
     return (
         <>
         <TopNav />
-        <Navigation />
+        <div className="hide-on-phone">
+        <Navigation />        
         <BottomNav />
+        </div>      
+        <div className="display-on-phone">
+        <PhoneNav />    
+        </div>
         <BreadCrumbs catName="Electric Pressure Washer"/>
         <h4 style={{"fontSize":"20px", "textAlign":"center", "textDecoration":"underline"}}>Electric Pressure Washer Availabe for sale in Kenya.</h4>
         

@@ -4,13 +4,21 @@ import BottomNav from "../../component/BottomNav";
 import Footer from "../../component/Footer";
 import Navigation from "../../component/Navigation";
 import BreadCrumbs from "../../component/Utils/BreadCrumbs";
+import TopNav from "../../component/TopNav";
+import PhoneNav from "../../component/PhoneNav";
 
 
 export default function PetrolEngines(props){
     return (
         <>
-        <Navigation/>
+        <TopNav />
+        <div className="hide-on-phone">
+        <Navigation />        
         <BottomNav />
+        </div>      
+        <div className="display-on-phone">
+        <PhoneNav />    
+        </div>
         <BreadCrumbs catName="Petrol 7.5hp Engines" />
         <h4 style={{"fontSize":"20px", "textAlign":"center", "textDecoration":"underline"}}>Petrol 7.5hp Engines available</h4>
         <div className="table">

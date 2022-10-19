@@ -3,14 +3,22 @@ import React from "react";
 import BottomNav from "../../component/BottomNav";
 import Footer from "../../component/Footer";
 import Navigation from "../../component/Navigation";
+import TopNav from "../../component/TopNav";
+import PhoneNav from "../../component/PhoneNav";
 import BreadCrumbs from "../../component/Utils/BreadCrumbs";
 
 
 export default function GasolineEngines(props){
     return (
         <>
-        <Navigation/>
+        <TopNav />
+        <div className="hide-on-phone">
+        <Navigation />        
         <BottomNav />
+        </div>      
+        <div className="display-on-phone">
+        <PhoneNav />    
+        </div>
         <BreadCrumbs catName="Gasoline 7.5HP available" />
         <h4 style={{"fontSize":"20px", "textAlign":"center", "textDecoration":"underline"}}>Gasoline 7.5hp Engines available</h4>
         <div className="table">
