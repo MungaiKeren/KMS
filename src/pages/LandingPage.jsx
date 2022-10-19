@@ -3,6 +3,7 @@ import '../Styles/Landing.scss';
 import Navigation from "../component/Navigation";
 import TopNav from "../component/TopNav";
 import BottomNav from "../component/BottomNav";
+import PhoneNav from "../component/PhoneNav";
 import Card from "../component/Cards";
 import ContactForm from "../component/Utils/ContactForm";
 import Footer from "../component/Footer";
@@ -13,8 +14,13 @@ export function LandingPage(props){
     return (
         <>
         <TopNav />
-        <Navigation />
+        <div className="hide-on-phone">
+        <Navigation />        
         <BottomNav />
+        </div>      
+        <div className="display-on-phone">
+        <PhoneNav />    
+        </div>  
         <Card />
         <hr />
         <h2>Kenya Machinery Services</h2>

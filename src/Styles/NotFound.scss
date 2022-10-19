@@ -1,0 +1,41 @@
+@import "../Styles/0_mediaquery";
+@import "../Styles/1_variables";
+
+.notfound{
+    padding: 2em;
+    h1{
+        position: absolute;
+        top: 1em;
+        left: 0;
+        right: 0;
+        text-decoration: none;
+        font-size: 66px;
+        color: grey;
+    }
+    p{
+        position: absolute;
+        top: 10em;
+        left: 0;
+        right: 0;
+        color: grey;
+        font-size: 20px;
+        text-align: center;
+    }
+    img{
+        height: 100vh;
+        width: 100%;
+    }
+    @include maxwidth(mobile){
+        margin-bottom: 25px;
+        h1{
+            top: 7em !important;
+            font-size: 30px !important;
+        }
+        p{
+            top: 20em !important;
+        }
+        img{
+            height: auto !important;
+        }
+    }
+}

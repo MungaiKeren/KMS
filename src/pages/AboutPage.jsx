@@ -1,5 +1,7 @@
 import React from "react";
 import TopNav from "../component/TopNav";
+import BottomNav from "../component/BottomNav";
+import PhoneNav from "../component/PhoneNav";
 import Footer from "../component/Footer";
 import Navigation from "../component/Navigation";
 
@@ -7,7 +9,13 @@ export function AboutPage(props){
     return (
         <>
         <TopNav/>
-        <Navigation />
+        <div className="hide-on-phone">
+        <Navigation />        
+        <BottomNav />
+        </div>      
+        <div className="display-on-phone">
+        <PhoneNav />    
+        </div>
         <div className="content">
             <h1>About Us</h1>
             <div className="p">
