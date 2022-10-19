@@ -8,6 +8,12 @@ import Card from "../component/Cards";
 import ContactForm from "../component/Utils/ContactForm";
 import Footer from "../component/Footer";
 
+// import images
+import massey from "../assets/Images/New/MasseyFurgerson.jpg"
+import img1 from "../assets/Images/New/IMG-20221001-WA0004.jpg"
+import lawnmower from "../assets/Images/New/IMG-20221001-WA0000.jpg"
+import img2 from "../assets/Images/New/IMG-20221001-WA0002.jpg"
+
 
 
 export function LandingPage(props){
@@ -29,6 +35,21 @@ export function LandingPage(props){
         </p>
         
         <ContactForm />
+        <div className="categs">
+            <div className="massey">
+                <img src={massey} height={300} width={300} className="image" alt="Massey Furgerson farm tractor available for sale in kenya" />
+            </div>
+            <div className="massey">
+                <img src={img1} height={300} width={300} alt="Farming tools for sale" />
+                
+            </div>
+            <div className="massey">
+                <img src={lawnmower} height={300} width={300} alt="lawnmowers available for sale in kenya" />
+            </div>
+            <div className="massey">
+                <img src={img2} height={300} width={300} alt="lawnmowers available for sale in kenya" />
+            </div>
+        </div>
         <Footer />
         </>
     )

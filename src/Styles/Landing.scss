@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import "./1_variables";
+@import "./0_mediaquery";
 
 hr{
     margin: 0 2em 0 2em;
@@ -17,5 +19,36 @@ h2{
     .col1{
         margin: 20px;
         background: #EFEAD8;
+    }
+}
+.categs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 1em;
+    margin-left: 0px;
+    margin-bottom: 3em;
+    .massey{
+        height: 300px;
+        width: 300px;   
+        border: 2px solid grey;
+        .tag{
+            height: auto;
+            padding: 1em;
+            background: $accent;
+            margin: 0 !important;
+            p{
+                margin: 0;
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+    @include maxwidth(mobile){
+        display: block !important;
+        padding: 2em !important;
+        .massey{
+            margin-bottom: 2em;
+        }
     }
 }

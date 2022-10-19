@@ -110,7 +110,7 @@
         color: #F2EBE9 !important;
     }
     @include maxwidth(mobile){
-        height: 100vh;
+        height: auto;
         width: 100vw;
         .row{
             display: block !important;
