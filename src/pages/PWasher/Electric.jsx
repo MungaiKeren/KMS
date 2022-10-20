@@ -60,7 +60,7 @@ export default function ElectricPWasher(props){
                 </tr>
                 <tr>
                     <td>Pionner</td>
-                    <td>3450psq</td>
+                    <td>3450psi</td>
                     <td>82,000</td>
                 </tr>
                 <tr>

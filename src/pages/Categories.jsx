@@ -76,8 +76,8 @@ export default function Category(props){
     const generatorsList = ["Relatively low maintenance.","Long durability","Safe storage","High power output","More rugged and reliable","Easy access to fuel."]
 
     // pressure washer descriptions
-    const pressure_desc = ["The best machine keeps you in business, when it comes to car wash business. It is one of the fastest growing business with over 10,000 single business set in kenya alone.", "It has been one of the easiest employment for youths in kenya. From a small and not so busy car wash to the large and busiest,  you need the write machine.","We are the leading suppliers of the best electric and petrol powered car washing machines.", "Call or  send WhatsApp  message to talk to our experts to guide you on your purchase."]
-    const pressure_lists = ["Better option where alternative or back-up power will be used infrequently or temporarily.", "Petrol generators are less expensive","More effective breaking up of lubricant residues.","Labour cost savings.","Shorter drying time.","Use less cleaning agent.","Germ-reducing effect.","Protection of delicate surface.", " Produce less harmful carbon dioxide fumes."]
+    const pressure_desc = ["The best machine keeps you in business, when it comes to car wash business. It is one of the fastest growing business with over 10,000 single business set in kenya alone.", "It has been one of the easiest employment for youths in kenya. From a small and not so busy car wash to the large and busiest,  you need the right machine.","We are the leading suppliers of the best electric and petrol powered car washing machines.", "Call or  send a WhatsApp  message to talk to our experts to guide you on your purchase."]
+    const pressure_lists = ["Better option where alternative or back-up power will be used infrequently or temporarily.", "Petrol generators are less expensive","More effective breaking up of lubricant residues.","Labour cost savings.","Shorter drying time.","Use less cleaning agent.","Germ-reducing effect.","Protection of delicate surfaces.", " Produce less harmful carbon dioxide fumes."]
 
     return (
         <div>
@@ -184,7 +184,7 @@ export default function Category(props){
                 <Content 
                     title="Pressure Washer."
                     p={pressure_desc}
-                    listTitle="The main advantages Petrol generators are;"
+                    listTitle="The main advantages of Petrol generators are;"
                     lists={pressure_lists}
                 />
                 <Footer />
@@ -220,7 +220,7 @@ export default function Category(props){
                             <td>Stallions</td>
                             <td>14HP</td>
                             <td>SGE1500</td>
-                            <td>185,000</td>
+                            <td>195,000</td>
                         </tr>
                         <tr>
                             <td>Levhart</td>
@@ -233,6 +233,24 @@ export default function Category(props){
                             <td>10HP</td>
                             <td>CUK1300D</td>
                             <td>135,000</td>
+                        </tr>
+                        <tr>
+                            <td>Jiadong</td>
+                            <td>18HP</td>
+                            <td>YB-151</td>
+                            <td>345,000</td>
+                        </tr>
+                        <tr>
+                            <td>Massey ferguson</td>
+                            <td>375HP</td>
+                            <td>MF 375</td>
+                            <td>2,850,000</td>
+                        </tr>
+                        <tr>
+                            <td>Massey ferguson</td>
+                            <td>380 HP</td>
+                            <td>MF 380</td>
+                            <td>3,500,000</td>
                         </tr>
                     </table>
                 </div>

@@ -92,10 +92,10 @@ export default function PhoneNav(props){
                 <>
                 <p onClick={()=>{
                     window.location.href = "/category/pressurewasher/electric"
-                }}>Petrol PW (Tamashi japan)</p>
+                }}>Petrol PW</p>
                 <p onClick={()=>{
                     window.location.href="/category/pressurewasher/electric"
-                }}>Electric PW (Cummins)</p>
+                }}>Electric PW</p>
                 </>}
                 <li className="hasDD">
                    <a href="/category/farmtractors">Farm Tractors</a>
