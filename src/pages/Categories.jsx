@@ -23,9 +23,6 @@ import ePwasher4200 from "../assets/Images/ElectricPressureWasher4200PSL.jpg"
 // import ePwasher3400 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"
 // import ePWasher2300 from "../assets/Images/ElectricPressureWasher3400PSL.jpg"
 
-// farm tractor
-import tractor from "../assets/Images/tractor.jpg"
-import tractor2 from "../assets/Images/tractor2.jpg"
 
 // lawn mower images
 import lawnMower from "../assets/Images/lawnMower.jpg";
@@ -36,6 +33,14 @@ import newLM from "../assets/Images/new_lawnmower.jpg"
 
 // grass cutter images
 import brushCutter from "../assets/Images/brushcutter2.jpg";
+
+//farm tractor images
+import hayBaler from "../assets/Images/HayBaler.jpeg";
+import masseyFurgerson from "../assets/Images/MasseyFurgerson.jpg";
+import threeRowRidger from "../assets/Images/threeRowRidger2.jpeg";
+import hayBaler2 from "../assets/Images/HayBaler2.jpeg";
+import hayBaler3 from "../assets/Images/HayBaler3.jpeg";
+import hayBaler4 from "../assets/Images/HayBaler4.jpeg"
 
 
 export default function Category(props){
@@ -71,6 +76,15 @@ export default function Category(props){
         {img: ePwasher4200, alt: "Petrol Pressure washer availble for sale in Kenya", name: "Gasoline High PressureWasher", description: "4200PSI"}
     ]
 
+    const farmTractorItems = [
+        {img: hayBaler, alt: "Haybaler available for sale in Kenya", name: "Hay Baler", description: ""},
+        {img:masseyFurgerson, alt: "Massey Furgerson available for sale in Kenya", name: "Massey Furgerson Farm Tractor", description: ""},
+        {img: threeRowRidger, alt: "Three Row Ridger available for sale in kenya", name:"Massey Furgerson Three Row Ridger", description: "Ksh 185,000"},
+        {img:hayBaler2, alt: "Hay Baler", name: "Haybaler", description: ""},
+        {img:hayBaler3, alt: "Hay Baler", name: "Haybaler", description: ""},
+        {img:hayBaler4, alt: "Hay Baler", name: "Haybaler", description: ""},
+    ]
+
     // generators descriptions
     const gen_desc = ["We all need power supply for various needs in our daily life. Getting good and reliable power is important. Thats why we do not take to chances when it comes to giving the best engines in the world.", "We have power generators with petrol engines and Deisel engines all suitable for a wide range of use. From a small house hold appliances to industrial and large scale use.", "Our leading brand with cummins engines is Carltons-UK,followed in consistently good performance by Power- Italia, Gilardoni, Hisaki, Aico Milano etc.    Get 12+2 months  warranty on any of our petrol powered power italia generators", "Get easy access  to spares and on time servicing of your generator purchased from us by our well trained experts.", "We also facilitate delivery at a small cost for all generator size. With Nairobi same day delivery and outside Nairobi and kenya, delivery is from 24hrs upon full payment."]
     const generatorsList = ["Relatively low maintenance.","Long durability","Safe storage","High power output","More rugged and reliable","Easy access to fuel."]
@@ -78,6 +92,14 @@ export default function Category(props){
     // pressure washer descriptions
     const pressure_desc = ["The best machine keeps you in business, when it comes to car wash business. It is one of the fastest growing business with over 10,000 single business set in kenya alone.", "It has been one of the easiest employment for youths in kenya. From a small and not so busy car wash to the large and busiest,  you need the right machine.","We are the leading suppliers of the best electric and petrol powered car washing machines.", "Call or  send a WhatsApp  message to talk to our experts to guide you on your purchase."]
     const pressure_lists = ["Better option where alternative or back-up power will be used infrequently or temporarily.", "Petrol generators are less expensive","More effective breaking up of lubricant residues.","Labour cost savings.","Shorter drying time.","Use less cleaning agent.","Germ-reducing effect.","Protection of delicate surfaces.", " Produce less harmful carbon dioxide fumes."]
+
+    const hayBaler_desc = [
+        "A baler or hay baler is a piece of farm machinery used to compress cut and raked crops such as hay, cotton, rice straw, wheat straw, or silage into compact bales that are easy to handle, transport, and store. ",
+
+        "We offer the best balers suitable for your farm work at very affordable prices in the market. ",
+        
+        "We also do delivery at a small fee in all reguons in kenya , East Africa and Africa at large"
+    ]
 
     return (
         <div>
@@ -195,19 +217,40 @@ export default function Category(props){
                 <TopNav />
                 <CategoryItem
                     catName="Farm Tractors"
-                    catImage={tractor}
-                    catAltText="Stallions Farm tractor available for sale in kenya"
-                    catDescription="Farm Tractors"
-                    name1="Stallions Farm Tractors Available"
-                    moreDescription1=""
-
-                    catImage2={tractor2}
-                    catAltText2=""
-                    name2="LevHart Farm tractors available for sale in Kenya"
-                    moreDescription2=""
+                    title="Farm Tractors."
+                    items={farmTractorItems}
+                />
+                <Content 
+                    title="Hay Baler"
+                    p={hayBaler_desc}
                 />
                 <hr />
-                <h5 style={{"fontSize":"20px", "textAlign":"center", "textDecoration":"underline"}} >Farm Tractors available for sale in Kenya.</h5>
+                <h5 style={{"fontSize":"20px", "textAlign":"center", "textDecoration":"underline"}} >Hay Baler Prices</h5>
+                <div className="table">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Bales/day</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Claas 55 or 65</td>
+                            <td>300 bales per day</td>
+                            <td>1.5 million</td>
+                        </tr>
+                        <tr>
+                            <td>International 552 </td>
+                            <td>Capacity 2700 bales</td>
+                            <td>980,000</td>
+                        </tr>
+                        <tr>
+                            <td>John Deere 346</td>
+                            <td>Capacity 2700 bales</td>
+                            <td>1,200,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <h5 style={{"fontSize":"20px", "textAlign":"center", "textDecoration":"underline"}} >Farm Tractors Prices</h5>
                 <div className="table">
                     <table>
                         <tr>

@@ -34,7 +34,6 @@ export function LandingPage(props){
         Buying a machine is a matter of trust, whether you are buying online or offline. Our company is a renowned supplier of quality machinery from quality brands in many categories. We supply quality machines including; power drills, circular saws, water pumps, sugarcane juice machines, bone cutters, concrete hoists, walking tractors and many others. Our company stands for quality and optimism and we ensure that you make the right purchase the first time.
         </p>
         
-        <ContactForm />
         <div className="categs">
             <div className="massey">
                 <img src={massey} height={300} width={300} className="image" alt="Massey Furgerson farm tractor available for sale in kenya" />
@@ -50,6 +49,7 @@ export function LandingPage(props){
                 <img src={img2} height={300} width={300} alt="lawnmowers available for sale in kenya" />
             </div>
         </div>
+        <ContactForm />
         <Footer />
         </>
     )
